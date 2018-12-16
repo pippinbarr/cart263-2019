@@ -1,4 +1,4 @@
-### Introductions / CART 263 / Winter 2019 / Pippin Barr
+### CART 263 / Winter 2019 / Pippin Barr
 
 # Introductions
 
