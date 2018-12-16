@@ -4,7 +4,7 @@
 
 # Week 1 -- Week of 7 January 2019
 
-## Introductions
+## Introductions ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions.md))
 ## Project structure review
 ## JavaScript review
 ## p5
