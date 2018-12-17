@@ -8,14 +8,16 @@
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
 - __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/tools-of-the-trade))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
-- __p5 review__
+- __p5 review__ (see: https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
 
 ## Homework
 - Assignment 1
 
 # Week 2 -- Week of 14 January 2019
 
-## Inheritance and Polymorphism
+## Topics
+- __Basic Object-Oriented Programming__
+- __Inheritance and Polymorphism__
 
 # Week 3 -- Week of 21 January 2019
 
