@@ -1,3 +1,5 @@
+"use strict";
+
 /*****************
 
 Title of Project

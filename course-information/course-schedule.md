@@ -6,8 +6,8 @@
 
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
-- __Tools of the trade__
-- __JavaScript review__
+- __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/tools-of-the-trade))
+- __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
 - __p5 review__
 
 ## Homework
