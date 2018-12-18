@@ -1,4 +1,4 @@
-### CART 263 / Fall 2018 / Pippin Barr
+### CART 263 / Winter 2019 / Pippin Barr
 
 # The tools of the trade
 
