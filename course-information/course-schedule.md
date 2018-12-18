@@ -8,7 +8,7 @@
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
 - __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/tools-of-the-trade))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
-- __p5 review__ (see: https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
+- __p5 review__ ([p5 Review Example](https://pippinbarr.github.io/cart263-2019/examples/p5-review/), [p5 Review Example Source](https://pippinbarr.github.io/cart263-2019/examples/p5-review.zip), [Transition from Processing to p5](https://github.com/processing/p5.js/wiki/Processing-transition), [p5 Reference](https://p5js.org/reference/), [CART253 repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule))
 
 ## Homework
 - Assignment 1

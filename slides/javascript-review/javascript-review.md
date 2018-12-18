@@ -128,6 +128,7 @@ x = 101;
 - They are:
   - Undefined (nothing)
   - Number (numbers)
+  - NaN (not a number)
   - Boolean (truth values)
   - String (text)
   - Object (a more complex data structure)
@@ -166,6 +167,31 @@ let pi = 3.14159
 ```
 
 - To write a number value we just write it like you'd expect
+
+---
+
+## NaN (Not a Number)
+
+- If you use certain functions that return a number, but you give them arguments that don't make sense, they return NaN
+- You can't check if something is NaN with equality, you need to use `isNan()`
+
+```javascript
+let i = Math.sqrt(-1); // The square root of -1
+console.log(i); // NaN
+console.log(i === NaN); // false
+console.log(isNaN(i)); // true
+```
+
+???
+
+- Similarly you get NaN with nonesense-y things like the following:
+
+```javascript
+let x = Math.floor("hello!");
+console.log(x); // NaN
+let y = parseInt("This is not a number!");
+console.log(y); // NaN
+```
 
 ---
 
@@ -322,6 +348,24 @@ let miffy = {
 }
 console.log(miffy.name); // "Miffy"
 console.log(miffy.age); // 63
+```
+
+---
+
+## null
+
+- `null` is used to indicated the absence of an object
+- You can use it yourself in cases where a variable is intended to contain an object but doesn't right now
+
+```javascript
+let myObject = null;
+```
+
+- And `null` is often returned in cases where a function that returns an object needs to return an empty/not-found/non-value
+
+```javascript
+let div = document.getElementById("wrapper"); // Assuming there is no element with id #wrapper
+console.log(div); // null
 ```
 
 ---
