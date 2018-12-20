@@ -1,0 +1,43 @@
+/*
+
+DART450
+Six Shooter
+
+*/
+
+body {
+	margin: 50px;
+	overflow-x: hidden; /* Allows our bullets to go off screen without creating a scrollbar */
+	font-family: Helvetica, sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+	user-select: none;
+}
+
+.bullet {
+	position: relative; /* Relative or absolute position required for animating top and left */
+	color: black;
+}
+
+.fired {
+	font-style: italic;
+	color: red;
+}
+
+.fire {
+	left: 2000px;
+}
+
+#trigger {
+	color: #f66;
+}
+
+.dry-fire {
+	color: #666 !important;
+	font-weight:lighter;
+	font-style: italic;
+}
+
+#reload {
+	color: #666;
+}

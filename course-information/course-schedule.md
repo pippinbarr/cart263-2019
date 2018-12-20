@@ -21,8 +21,14 @@
 
 # Week 3 -- Week of 21 January 2019
 
-## JavaScript and the DOM
-## jQuery
+## Topic
+- jQuery ([Slides](https://pippinbarr.github.io/cart263-2019/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/jquery/jquery))
+- Example: Sixshooter ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))
+
+## Resources
+- [jQuery Learning Centre](https://learn.jquery.com/)
+- [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
+- [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
 
 ## Hand-in
 - Assignment 1
