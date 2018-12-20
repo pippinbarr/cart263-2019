@@ -4,4 +4,7 @@ class Brick extends Block {
     super(x,y,brickWidth,brickHeight,brickColor);
   }
 
+  hit() {
+    this.active = false;
+  }
 }

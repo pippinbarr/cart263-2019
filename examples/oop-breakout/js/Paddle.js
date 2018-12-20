@@ -1,7 +1,7 @@
 class Paddle extends Block {
 
   constructor(x,y,paddleWidth,paddleHeight) {
-    super(x,y,paddleWidth,paddleHeight,'#ffffff');
+    super(x,y,paddleWidth,paddleHeight,color(255));
   }
 
   handleInput() {

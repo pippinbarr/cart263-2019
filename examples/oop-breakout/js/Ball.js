@@ -1,7 +1,7 @@
 class Ball extends Block {
 
   constructor(x,y,ballWidth,ballHeight,ballSpeed) {
-    super(x,y,ballWidth,ballHeight,'#ffffff');
+    super(x,y,ballWidth,ballHeight,color(255));
     this.speed = ballSpeed;
     this.vx = this.speed;
     this.vy = this.speed;

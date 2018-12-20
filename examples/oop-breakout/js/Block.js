@@ -32,10 +32,10 @@ class Block {
     if (!this.active) {
       return;
     }
-    
+
     push();
     noStroke();
-    fill(this.color);
+    fill(color(this.color));
     rect(this.x,this.y,this.width,this.height);
     pop();
   }
