@@ -53,7 +53,7 @@
 ## Exercises
 - [w3schools JavaScript Exercises](https://www.w3schools.com/js/js_exercises.asp) [Good on the basics]
 - [A Smarter Way to Learn](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) [A little finnicky]
-- [Nodeschool Workshoppers javascripting](https://nodeschool.io/index.html#workshopper-list)
+- [Nodeschool Workshoppers javascripting](https://nodeschool.io/index.html#workshopper-list) [Requires use of node in the terminal]
 
 ---
 
@@ -68,6 +68,9 @@
 ## Activity
 - __OOP Circle Eater__ ([Slides](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/oop-circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater.zip))
 
+## Example
+- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
+
 ## Hand-in
 - Assignment 1
 
@@ -78,9 +81,6 @@
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
-
-## Example
-- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
 
 
 ---
