@@ -2,7 +2,8 @@
 
 ---
 
-# Week 1 -- Week of 7 January 2019
+# Week 1
+__Week of 7 January 2019__
 
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
@@ -19,35 +20,37 @@
 - [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
 
 ## Example(s)
-- __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
+- __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
+- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
 
 ## Homework
 - __Assignment 1__
 
 ---
 
-# Week 2 -- Week of 14 January 2019
+# Week 2
+__Week of 14 January 2019__
 
 ## Topics
 - __Object-Oriented Programming__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/object-oriented-programming))
 - __Inheritance and Polymorphism__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/inheritance-and-polymorphism))
 
 ## Example(s)
-- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
+- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
 
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
 
 ---
 
-# Week 3 -- Week of 21 January 2019
+# Week 3
+__Week of 21 January 2019__
 
 ## Topic(s)
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/jquery/jquery))
 
 ## Example(s)
-- __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))
+- __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))
 
 ## Resources
 - [jQuery API](https://api.jquery.com)
@@ -66,7 +69,8 @@
 
 ---
 
-# Week 4 -- Week of 28 January 2019
+# Week 4
+__Week of 28 January 2019__
 
 ## Topic(s)
 
@@ -79,7 +83,8 @@
 
 ---
 
-# Week 5 -- Week of 4 February 2019
+# Week 5
+__Week of 4 February 2019__
 
 ## Pitch and volume
 ## ResponsiveVoice
@@ -93,7 +98,8 @@
 
 ---
 
-# Week 6 -- Week of 11 February 2019
+# Week 6
+__Week of 11 February 2019__
 
 ## Phaser / Pixi
 
@@ -105,7 +111,8 @@
 
 ---
 
-# Week 7 -- Week of 18 February 2019
+# Week 7
+__Week of 18 February 2019__
 
 ## Howler
 ## Gibber
@@ -121,7 +128,8 @@
 
 ---
 
-# Mid-term Break -- Week of 25 February 2019
+# Mid-term Break
+__Week of 25 February 2019__
 
 ---
 
@@ -130,7 +138,8 @@
 
 ---
 
-# Week 8 -- Week of 4 March 2019
+# Week 8
+__Week of 4 March 2019__
 
 ## Three.js
 ## A-Frame
@@ -144,7 +153,8 @@
 
 ---
 
-# Week 9 -- Week of 11 March 2019
+# Week 9
+__Week of 11 March 2019__
 
 ## RiTA
 ## Tracery
@@ -159,7 +169,8 @@
 
 ---
 
-# Week 10 -- Week of 18 March 2019
+# Week 10
+__Week of 18 March 2019__
 
 ## Tracking.js
 ## GPS
@@ -174,7 +185,8 @@
 
 ---
 
-# Week 11 -- Week of 25 March 2019
+# Week 11
+__Week of 25 March 2019__
 
 ## APIs?
 
@@ -185,7 +197,8 @@
 
 ---
 
-# Week 12 -- Week of 1 April 2019
+# Week 12
+__Week of 1 April 2019__
 
 ## Node.js?
 ## Electron?
