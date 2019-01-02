@@ -20,43 +20,53 @@
 ---
 
 # Week 1
-__Week of 7 January 2019__
+## Introductions and JavaScript Review (Week of 7 January 2019)
 
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
 - __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/tools-of-the-trade))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
-- __p5 review__ ([p5 Review Example](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review/), [p5 Review Example Source](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review.zip))
+- __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review.zip))
 
-## Example(s)
-- __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
+## Activity
+- __Circle Eater__ ([Slides](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater.zip))
+
+## Example
+- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout/), [Source Code](https://github.com/pippinbarr/cart263-2019/tree/master/examples/p5/breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout.zip))
 
 ## Homework
 - __Assignment 1__
 
 ## Resources
-- [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
-- [Eloquent JavaScript](https://eloquentjavascript.net/)
-- [Transition from Processing to p5](https://github.com/processing/p5.js/wiki/Processing-transition)
-- [p5 Learn](https://p5js.org/learn/)
-- [p5 Reference](https://p5js.org/reference/)
-- [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
+- __JavaScript__
+  - [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
+  - [Mozilla JavaScript Documentation](https://developer.mozilla.org/bm/docs/Web/JavaScript)
+  - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
+  - [The Modern JavaScript Tutorial](https://javascript.info/)
+  - [w3schools JavaScript Tutorial](https://www.w3schools.com/js/default.asp)
+  - [Eloquent JavaScript](https://eloquentjavascript.net/)
+- __p5__
+  - [Transition from Processing to p5](https://github.com/processing/p5.js/wiki/Processing-transition)
+  - [p5 Learn](https://p5js.org/learn/)
+  - [p5 Reference](https://p5js.org/reference/)
+
+## Exercises
+- [w3schools JavaScript Exercises](https://www.w3schools.com/js/js_exercises.asp) [Good on the basics]
+- [A Smarter Way to Learn](http://www.asmarterwaytolearn.com/js/index-of-exercises.html) [A little finnicky]
+- [Nodeschool Workshoppers javascripting](https://nodeschool.io/index.html#workshopper-list)
 
 ---
 
 # Week 2
-__Week of 14 January 2019__
+
+## Object-Oriented Programming, Inheritance, and Polymorphism (Week of 14 January 2019)
 
 ## Topics
 - __Object-Oriented Programming__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/object-oriented-programming))
 - __Inheritance and Polymorphism__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/inheritance-and-polymorphism))
 
-## Example(s)
-- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
-
-## Resources
-- [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
+## Activity
+- __OOP Circle Eater__ ([Slides](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/oop-circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater.zip))
 
 ## Hand-in
 - Assignment 1
@@ -64,24 +74,26 @@ __Week of 14 January 2019__
 ## Homework
 - Assignment 2
 
+## Resources
+- [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
+- [The Modern JavaScript Tutorial](https://javascript.info/)
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
+
+## Example
+- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
+
+
 ---
 
 # Week 3
-__Week of 21 January 2019__
 
-## Topic(s)
+## jQuery (Week of 21 January 2019)
+
+## Topic
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/jquery/jquery))
 
-## Example(s)
+## Example
 - __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))
-
-## Resources
-- [jQuery API](https://api.jquery.com)
-- [jQuery Learning Centre](https://learn.jquery.com/)
-- [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
-- [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
-- [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
-- [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
 
 ## Hand-in
 - Assignment 2
@@ -90,13 +102,25 @@ __Week of 21 January 2019__
 - Assignment 3
 - Project 1
 
+## Exercises
+- [w3schools jQuery Exercises](https://www.w3schools.com/jquery/exercise_jq.asp)
+- [A Smarter Way to Learn jQuery Exercises](http://www.asmarterwaytolearn.com/jquery/index-of-exercises.html) [Need to register]
+
+## Resources
+- [jQuery API](https://api.jquery.com)
+- [jQuery Learning Centre](https://learn.jquery.com/)
+- [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
+- [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
+- [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/)
+- [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
+- [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
+
 ---
 
 # Week 4
-__Week of 28 January 2019__
+## jQuery UI (Week of 28 January 2019)
 
-## Topic(s)
-
+## Topic
 - __jQuery UI__
 
 ## Hand-in
@@ -107,11 +131,11 @@ __Week of 28 January 2019__
 ---
 
 # Week 5
-__Week of 4 February 2019__
+## Voice In, Voice Out, Project 1 hand-in (Week of 4 February 2019)
 
-## Pitch and volume
-## ResponsiveVoice
-## annyang
+## Topics
+- __ResponsiveVoice__
+- __annyang__
 
 ## Hand-in
 - Project 1
@@ -122,9 +146,10 @@ __Week of 4 February 2019__
 ---
 
 # Week 6
-__Week of 11 February 2019__
+## Phaser (Week of 11 February 2019)
 
-## Phaser / Pixi
+## Topic
+- __Phaser__
 
 ## Hand-in
 - Assignment 4
@@ -135,13 +160,14 @@ __Week of 11 February 2019__
 ---
 
 # Week 7
-__Week of 18 February 2019__
+## Sound Synthesis (Week of 18 February 2019)
 
-## Howler
-## Gibber
-## Flocking
-## Pizzacato
-## Tone.js
+## Topics
+- __Howler__
+- __Gibber__
+- __Flocking__
+- __Pizzacato__
+- __Tone.js__
 
 ## Hand-in
 - Assignment 5
@@ -152,9 +178,7 @@ __Week of 18 February 2019__
 ---
 
 # Mid-term Break
-__Week of 25 February 2019__
-
----
+## No Class (Week of 25 February 2019)
 
 ## Homework
 - Project 2
@@ -162,10 +186,11 @@ __Week of 25 February 2019__
 ---
 
 # Week 8
-__Week of 4 March 2019__
+## 3D, Project 2 hand-in (Week of 4 March 2019)
 
-## Three.js
-## A-Frame
+## Topic
+- __three.js__
+- __A-Frame__
 
 ## Hand-in
 - Project 2
@@ -176,12 +201,13 @@ __Week of 4 March 2019__
 ---
 
 # Week 9
-__Week of 11 March 2019__
+# Text generation and Data (Week of 11 March 2019)
 
-## RiTA
-## Tracery
-## Eliza
-## JSON
+## Topics
+- __RiTA__
+- __Tracery__
+- __Eliza.js__
+- __JSON__
 
 ## Hand-in
 - Assignment 6
@@ -192,12 +218,13 @@ __Week of 11 March 2019__
 ---
 
 # Week 10
-__Week of 18 March 2019__
+## Sensors (Week of 18 March 2019)
 
-## Tracking.js
-## GPS
-## Accelerometers
-## Time
+## Topics
+- __Tracking.js__
+- __GPS__
+- __Accelerometers__
+- __Time__
 
 ## Hand-in
 - Assignment 7
@@ -208,10 +235,11 @@ __Week of 18 March 2019__
 ---
 
 # Week 11
-__Week of 25 March 2019__
+## Node.js and Electron (Week of 25 March 2019)
 
-## Node.js?
-## Electron?
+## Topics
+- __Node.js__
+- __Electron__
 
 ## Hand-in
 - Assignment 8
@@ -221,7 +249,7 @@ __Week of 25 March 2019__
 ---
 
 # Week 12
-__Week of 1 April 2019__
+## Studio (Week of 1 April 2019)
 
 ## Hand-in
 - Assignment 8
@@ -230,14 +258,16 @@ __Week of 1 April 2019__
 
 ---
 
-# Week 13 -- Week of 8 April 2019
+# Week 13
+## Studio (Week of 8 April 2019)
 
 ## Homework
 - Project 3
 
 ---
 
-# Week 14 -- Week of 15 April 2019
+# Week 14
+## No Class (Week of 15 April 2019)
 
 ## Hand-in
 - Project 3
