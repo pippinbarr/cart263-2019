@@ -2,6 +2,22 @@
 
 ---
 
+- __[Week 1](#week-1) - Introductions, JavaScript review__
+- [Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism
+- [Week 3](#week-3) - jQuery
+- [Week 4](#week-4) - jQuery UI
+- [Week 5](#week-5) - Voice in, voice out
+- [Week 6](#week-6) - Phaser
+- [Week 7](#week-7) - Sound synthesis
+- [Week 8](#week-8) - 3D?
+- [Week 9](#week-9) - Text generation, data
+- [Week 10](#week-10) - Sensors
+- [Week 11](#week-11) - Node.js, Electron
+- [Week 12](#week-12) - Studio
+- [Week 13](#week-13) - Studio
+
+---
+
 # Week 1
 __Week of 7 January 2019__
 
@@ -188,7 +204,8 @@ __Week of 18 March 2019__
 # Week 11
 __Week of 25 March 2019__
 
-## APIs?
+## Node.js?
+## Electron?
 
 ## Hand-in
 - Assignment 8
@@ -199,9 +216,6 @@ __Week of 25 March 2019__
 
 # Week 12
 __Week of 1 April 2019__
-
-## Node.js?
-## Electron?
 
 ## Homework
 - Project 3
