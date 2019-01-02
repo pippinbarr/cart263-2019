@@ -6,15 +6,16 @@
 - [Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism
 - [Week 3](#week-3) - jQuery
 - [Week 4](#week-4) - jQuery UI
-- [Week 5](#week-5) - Voice in, voice out
+- [Week 5](#week-5) - Voice in, voice out [_Project 1 Due_]
 - [Week 6](#week-6) - Phaser
 - [Week 7](#week-7) - Sound synthesis
-- [Week 8](#week-8) - 3D?
+- [Week 8](#week-8) - 3D [_Project 2 Due_]
 - [Week 9](#week-9) - Text generation, data
 - [Week 10](#week-10) - Sensors
 - [Week 11](#week-11) - Node.js, Electron
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
+- [Week 14](#week-14) - No class [_Project 3 Due_]
 
 ---
 
@@ -161,10 +162,9 @@ __Week of 4 March 2019__
 ## A-Frame
 
 ## Hand-in
-- Assignment 5??
 - Project 2
 ## Homework
-- Assignment 6
+- Assignment 5
 - Project 3
 
 ---
@@ -178,9 +178,9 @@ __Week of 11 March 2019__
 ## JSON
 
 ## Hand-in
-- Assignment 6
+- Assignment 5
 ## Homework
-- Assignment 7
+- Assignment 6
 - Project 3
 
 ---
@@ -194,9 +194,9 @@ __Week of 18 March 2019__
 ## Time
 
 ## Hand-in
-- Assignment 7
+- Assignment 6
 ## Homework
-- Assignment 8
+- Assignment 7
 - Project 3
 
 ---
@@ -208,8 +208,9 @@ __Week of 25 March 2019__
 ## Electron?
 
 ## Hand-in
-- Assignment 8
+- Assignment 7
 ## Homework
+- Assignment 8
 - Project 3
 
 ---
@@ -217,6 +218,8 @@ __Week of 25 March 2019__
 # Week 12
 __Week of 1 April 2019__
 
+## Hand-in
+- Assignment 8
 ## Homework
 - Project 3
 
@@ -225,4 +228,11 @@ __Week of 1 April 2019__
 # Week 13 -- Week of 8 April 2019
 
 ## Homework
+- Project 3
+
+---
+
+# Week 14 -- Week of 15 April 2019
+
+## Hand-in
 - Project 3
