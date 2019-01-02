@@ -1,0 +1,28 @@
+/*********************************************
+
+This is the style file for this project.
+
+**********************************************/
+
+body {
+  font-family: Courier, monospace;
+  width: 800px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+div {
+  margin-top: 1em;
+}
+
+.redacted {
+  background-color: black;
+  color: transparent;
+  text-decoration: none;
+}
+
+.revealed {
+  background-color: transparent;
+  text-decoration: underline;
+  color: red
+}
