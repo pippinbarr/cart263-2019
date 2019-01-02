@@ -28,6 +28,13 @@ __Week of 7 January 2019__
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
 - __p5 review__ ([p5 Review Example](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review/), [p5 Review Example Source](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review.zip))
 
+## Example(s)
+- __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
+- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
+
+## Homework
+- __Assignment 1__
+
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
@@ -35,13 +42,6 @@ __Week of 7 January 2019__
 - [p5 Learn](https://p5js.org/learn/)
 - [p5 Reference](https://p5js.org/reference/)
 - [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
-
-## Example(s)
-- __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
-
-## Homework
-- __Assignment 1__
 
 ---
 
@@ -57,6 +57,12 @@ __Week of 14 January 2019__
 
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
+
+## Hand-in
+- Assignment 1
+
+## Homework
+- Assignment 2
 
 ---
 
@@ -78,10 +84,10 @@ __Week of 21 January 2019__
 - [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
 
 ## Hand-in
-- Assignment 1
+- Assignment 2
 
 ## Homework
-- Assignment 2
+- Assignment 3
 - Project 1
 
 ---
@@ -94,7 +100,7 @@ __Week of 28 January 2019__
 - __jQuery UI__
 
 ## Hand-in
-- Assignment 2
+- Assignment 3
 ## Homework
 - Project 1
 
@@ -110,7 +116,7 @@ __Week of 4 February 2019__
 ## Hand-in
 - Project 1
 ## Homework
-- Assignment 3
+- Assignment 4
 - Project 2
 
 ---
@@ -121,9 +127,9 @@ __Week of 11 February 2019__
 ## Phaser / Pixi
 
 ## Hand-in
-- Assignment 3
-## Homework
 - Assignment 4
+## Homework
+- Assignment 5
 - Project 2
 
 ---
@@ -138,9 +144,9 @@ __Week of 18 February 2019__
 ## Tone.js
 
 ## Hand-in
-- Assignment 4
-## Homework
 - Assignment 5
+## Homework
+- Assignment 6
 - Project 2
 
 ---
@@ -164,7 +170,7 @@ __Week of 4 March 2019__
 ## Hand-in
 - Project 2
 ## Homework
-- Assignment 5
+- Assignment 6
 - Project 3
 
 ---
@@ -178,9 +184,9 @@ __Week of 11 March 2019__
 ## JSON
 
 ## Hand-in
-- Assignment 5
-## Homework
 - Assignment 6
+## Homework
+- Assignment 7
 - Project 3
 
 ---
@@ -194,9 +200,9 @@ __Week of 18 March 2019__
 ## Time
 
 ## Hand-in
-- Assignment 6
-## Homework
 - Assignment 7
+## Homework
+- Assignment 8
 - Project 3
 
 ---
@@ -208,9 +214,8 @@ __Week of 25 March 2019__
 ## Electron?
 
 ## Hand-in
-- Assignment 7
-## Homework
 - Assignment 8
+## Homework
 - Project 3
 
 ---
