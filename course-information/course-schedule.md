@@ -8,7 +8,7 @@
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
 - __Tools of the trade__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/tools-of-the-trade/tools-of-the-trade))
 - __JavaScript review__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/javascript-review/javascript-review))
-- __p5 review__ ([p5 Review Example](https://pippinbarr.github.io/cart263-2019/examples/p5-review/), [p5 Review Example Source](https://pippinbarr.github.io/cart263-2019/examples/p5-review.zip)
+- __p5 review__ ([p5 Review Example](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review/), [p5 Review Example Source](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review.zip))
 
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
@@ -16,11 +16,11 @@
 - [Transition from Processing to p5](https://github.com/processing/p5.js/wiki/Processing-transition)
 - [p5 Learn](https://p5js.org/learn/)
 - [p5 Reference](https://p5js.org/reference/)
-- [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule))
+- [CART253 class repository](https://pippinbarr.github.io/cart253-2018/course_information/Course-Schedule)
 
 ## Example(s)
 - __p5 Review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/p5-review.zip))
-- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/js-review-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/javascript/js-review-breakout.zip))
+- __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/js-review-breakout.zip))
 
 ## Homework
 - __Assignment 1__
@@ -34,7 +34,7 @@
 - __Inheritance and Polymorphism__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/inheritance-and-polymorphism))
 
 ## Example(s)
-- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/javascript/oop-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/javasceript/oop-breakout.zip))
+- __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/),[Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
 
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
