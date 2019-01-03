@@ -1,9 +1,10 @@
 /*********************************************
 
-This is the style file for this project.
+Raving Redactionist CSS.
 
 **********************************************/
 
+/* Just some general syling of the page for aesthetics */
 body {
   font-family: Courier, monospace;
   width: 800px;
@@ -15,12 +16,14 @@ div {
   margin-top: 1em;
 }
 
+/* Redacted elements need to be blanked out */
 .redacted {
   background-color: black;
   color: transparent;
   text-decoration: none;
 }
 
+/* Revealed elements need to be highlighted because it's a disaster! */
 .revealed {
   background-color: transparent;
   text-decoration: underline;
