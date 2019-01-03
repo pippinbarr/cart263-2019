@@ -29,13 +29,13 @@
 - __p5 review__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/p5-review.zip))
 
 ## Activity
-- __Circle Eater__ ([Slides](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater.zip))
+- __Circle Eater__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-circle-eater/), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/circle-eater.zip))
 
 ## Example
 - __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout/), [Source Code](https://github.com/pippinbarr/cart263-2019/tree/master/examples/p5/breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout.zip))
 
 ## Homework
-- __Assignment 1__
+- __Assignment 1__ ([Brief](../assignments/assignment1/README.md), [Download Starting Code](../assignments/assignment1.zip))
 
 ## Resources
 - __JavaScript__
@@ -66,7 +66,7 @@
 - __Inheritance and Polymorphism__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/inheritance-and-polymorphism/inheritance-and-polymorphism))
 
 ## Activity
-- __OOP Circle Eater__ ([Slides](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/oop-circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater.zip))
+- __OOP Circle Eater__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-oop-circle-eater/), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/p5/oop-circle-eater/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/p5/oop-circle-eater.zip))
 
 ## Example
 - __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
@@ -91,6 +91,9 @@
 
 ## Topic
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/jquery/jquery))
+
+## Activity
+- __Raving Redactionist__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-raving-redactionist/), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/jquery/raving-redactionist/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/jquery/raving-redactionist/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/jquery/raving-redactionist.zip))
 
 ## Example
 - __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))

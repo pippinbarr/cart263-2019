@@ -2,37 +2,59 @@
 
 /*****************
 
-Title of Project
-Author Name
+Raving Redactionist
+Pippin Barr
 
-This is a template. You must fill in the title,
-author, and this description to match your project!
+Keep the document redacted!
 
 ******************/
 
-let screamSFX = new Audio('assets/sounds/scream.wav');
+let $spans;
 
-$(document).ready(function () {
-  let $spans = $('span');
-  $spans.addClass('redacted');
+$(document).ready(setup);
 
-  $spans.on('click',function () {
-    $(this).removeClass('revealed');
-    $(this).addClass('redacted');
-  });
+function setup () {
+  $spans = $('span');
 
-  let revelationInterval = setInterval(function () {
-    $spans.each(function () {
-      if (Math.random() < 0.1) {
-        $(this).removeClass('redacted');
-        $(this).addClass('revealed');
-      }
+  $spans.on('click',spanClicked);
 
-      if ($('.redacted').length === 0) {
-        $spans.off('click');
-        screamSFX.play();
-        clearInterval(revelationInterval);
-      }
-    })
-  },500);
-});
+  setInterval(update,500);
+};
+
+function spanClicked() {
+  $(this).removeClass('revealed');
+  $(this).addClass('redacted');
+}
+
+function update() {
+  $spans.each(updateSpan);
+}
+
+function updateSpan() {
+  let r = Math.random();
+  if (r < 0.1) {
+    $(this).removeClass('redacted');
+    $(this).addClass('revealed');
+  }
+}
+
+// Version using anonymous functions:
+
+// $(document).ready(function () {
+//   $spans = $('span');
+// 
+//   $spans.on('click',function () {
+//     $(this).removeClass('revealed');
+//     $(this).addClass('redacted');
+//   });
+//
+//   setInterval(function () {
+//     $spans.each(function () {
+//       let r = Math.random();
+//       if (r < 0.1) {
+//         $(this).removeClass('redacted');
+//         $(this).addClass('revealed');
+//       }
+//     });
+//   },500);
+// });

@@ -269,8 +269,4 @@ http://api.jquery.com/
 
 ---
 
-## Activity: XXXX
-
----
-
 # Fin.

@@ -15,7 +15,7 @@ class Avatar extends Agent {
   }
 
   update() {
-    if (!avatar.active) {
+    if (!this.active) {
       return;
     }
 
