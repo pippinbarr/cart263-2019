@@ -1,6 +1,4 @@
-# !!!! ALPHA VERSION !!!!
-
----
+## Index
 
 - __[Week 1](#week-1) - Introductions, JavaScript review__
 - [Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism
@@ -35,7 +33,7 @@
 - __Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout/), [Source Code](https://github.com/pippinbarr/cart263-2019/tree/master/examples/p5/breakout/), [Download Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/breakout.zip))
 
 ## Homework
-- __Assignment 1__ ([Brief](../assignments/assignment1/README.md), [Download Starting Code](../assignments/assignment1.zip))
+- [__Assignment 1__](../assignments/assignment1/README.md)
 
 ## Resources
 - __JavaScript__
@@ -72,10 +70,10 @@
 - __Object-Oriented Breakout__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/p5/oop-breakout.zip))
 
 ## Hand-in
-- Assignment 1
+- [__Assignment 1__](../assignments/assignment1/README.md)
 
 ## Homework
-- Assignment 2
+- [__Assignment 2__](../assignments/assignment2/README.md)
 
 ## Resources
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
@@ -99,10 +97,10 @@
 - __Sixshooter__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jquery/sixshooter.zip))
 
 ## Hand-in
-- Assignment 2
+- [__Assignment 2__](../assignments/assignment2/README.md)
 
 ## Homework
-- Assignment 3
+- [__Assignment 3__](../assignments/assignment3/README.md)
 - Project 1
 
 ## Exercises
@@ -127,7 +125,7 @@
 - __jQuery UI__
 
 ## Hand-in
-- Assignment 3
+- [__Assignment 3__](../assignments/assignment1/README.md)
 ## Homework
 - Project 1
 
