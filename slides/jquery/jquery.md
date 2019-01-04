@@ -82,6 +82,12 @@ function reactionClicked(e) {
 ???
 
 - This is just a small example to show the basic premise of retrieving elements on a page and manipulating them in some way, as well as listening to events
+- It does contain a bunch of the key elements here, notably:
+  - Setting up code to run once the page has loaded
+  - Accessing specific elements on the page (by id, by tag name)
+  - Changing the content of elements on the page (via innerText)
+  - Adding an event listener to an element (with addEventListener)
+  - Writing event handler functions (like reactionClicked) that deal with the specific element targeted (via e.target)
 
 ---
 
@@ -98,9 +104,13 @@ function reactionClicked(e) {
 - As with any library, we should first go to its homepage and follow the instructions there
   - https://www.jquery.com
 - Here we will see the option to download jQuery, but, if we read that download page more carefully we'll realise there are two options:
-  - We can download jQuery as a JavaScript file and include it in our project in the typical way
-  - We can use a CDN (Content Delivery Network) version of the library that is hosted online
+  1. We can download jQuery as a JavaScript file and include it in our project in the typical way
+  1. We can use a CDN (Content Delivery Network) version of the library that is hosted online
+
+???
+
 - If we download the file, we force our users to download jQuery when they access our webpage, but we will be able to develop offline. If we use the CDN, we take advantage of caching, but if we don't have access to the internet, we can't work on our project
+- Many of the very popular libraries around are available via a CDN
 
 ---
 
@@ -124,41 +134,55 @@ function reactionClicked(e) {
 - Another way is to rely on JavaScript that only runs when the document is ready to be manipulated, the jQuery version of this leads to programs written this way (in our `script.js`):
 
 ```javascript
-$(document).ready(function () {
+$(document).ready(setup);
 
-  // Code to run here!
-
-});
+function setup() {
+  // This code will run when the document is ready!
+}
 ```
 
 - This ensures our code will only run once the document is, well, ready.
 
-???
+---
 
-- If you feel queasy seeing an anonymous function defined inside a function call, you can separate them out:
+## Anonymous functions
+
+- In fact, a huge amount of the time in JavaScript when people are defining functions to be used as event handlers (like for "document ready") they use __anonymous functions__
+- That is, they __define__ the function right in the place where you're supposed to put the event handler as a parameter:
 
 ```javascript
-$(document).ready(setup);
-
-function setup() {
-
-  // Code to run here!
-
-}
+$(document).ready(function () {
+  // This code will run when the document is ready
+});
 ```
+
+- This is one of those things that can be alarming when you're first encountering it
+- But it's definitely something you will see __a lot__ online, so it's well worth getting used to
+
+???
+
+- And it's not __that__ bad
+- Really we're just putting the definition of the function where previously we would have put the name of the function
+- It means we've got one less step of indirection (going from the name to find the function code to run)
+- At the expensive of somewhat weirder-looking syntax, with the function definition nested inside the parameters of another function
+- You get used to it.
 
 ---
 
 ## Selection and action
 
 - At the heart of programming with jQuery is the concept of __selection__
-- Almost all lines of jQuery code begin by __selecting__ one or more elements of a page and then applying some __action__ (i.e. a function) to them
+- Most jQuery code begins by __selecting__ one or more elements of a page and then applying some __action__ (i.e. a function) to them (even the "document ready" structure is __selecting__ the document object for instance)
 - For example, if we want to fade in the `div` tags in our sample webpage we might write
 
 ```javascript
-let $divs = $('div');
-$divs.hide();
-$divs.fadeIn(2000);
+$(document).ready(setup);
+
+function setup() {
+  let $divs = $('div');
+  $divs.hide();
+  $divs.fadeIn(2000);
+}
 ```
 
 - Let's look at these more closely
@@ -167,7 +191,7 @@ $divs.fadeIn(2000);
 
 - Note how you see a flicker of the `div` elements just when the page loads?
 - That's because the page loads and renders for one frame before jQuery's `hide()` function is applied to the elements
-
+- If we wanted them to be hidden from the beginning we should set `display: none;` in their CSS
 ---
 
 ## Selection and action
@@ -180,7 +204,7 @@ let $divs = $('div');
 - So `$('div')` means "select all the `div` elements on the page"
 - The result the function returns is a special __object__ created by jQuery
 - We can store the result of this selection in a variable (note it is common practice to name variables that will store jQuery objects with a leading `$`)
-- In particular it has lots of special functions we can call on it with dot notation...
+- The resulting selection has lots of special functions we can call on it with dot notation...
 
 ---
 
@@ -211,6 +235,66 @@ $divs.fadeIn(2000);
 
 ---
 
+## Selection and action in one
+
+- In fact, we don't have to put a selection into a variable first, we can act directly on the selection while selecting it
+
+```javascript
+$('div').hide();
+$('div').fadeIn(2000);
+```
+
+- Since the selection __returns__ the jQuery object, we can use it right away!
+
+---
+
+## Chaining effects
+
+- Also in fact, we can often __chain__ these functions together, because much of the time each jQuery action __returns__ the object that it just worked on, meaning you can add another action!
+
+```javascript
+$('div').hide().fadeIn(2000);
+```
+
+- You can even write them on separate lines if that looks clearer
+
+```javascript
+$('div')
+  .hide()
+  .fadeIn(2000);
+```
+
+- Whether you actually want to do this kind of thing is up to you of course
+
+---
+
+## What kinds of actions are there?
+
+- There are many kinds of jQuery actions we can apply to elements on the page
+- This is where you need to make friends with the documentation of the [jQuery API](http://api.jquery.com/)
+- In fact it's a great idea to explore it and see what's there, rather than searching for something specific
+- Of particular note are actions that work with CSS, attributes, and effects
+
+---
+
+## What kinds of selection are there?
+
+- The most basic kind of selection in jQuery is to specify a CSS selector (things like `div`, `p`, `.myClass`, `#myId`, etc.)
+- But jQuery does provide more sophisticated selection possibilities, which you can read about in the [Selector](http://api.jquery.com/category/selectors/) section of the API documentation
+- For instance if you wanted to select every div on the page that __doesn't__ have a class of `spooky` you could write
+
+```javascript
+$('div').not('.spooky')
+```
+
+- or
+
+```javascript
+$('div:not(.spooky)')
+```
+
+---
+
 ## Event handlers
 
 - Moving quickly along, the other major aspect of jQuery is handling events that occur on the page
@@ -219,16 +303,27 @@ $divs.fadeIn(2000);
 - We use the `on()` function in jQuery to handle specific events on specific elements
 
 ```javascript
-$divs.on('click',function () {
+$divs.on('click',divClicked);
+
+function divClicked() {
   $(this).fadeOut();
-});
+}
 ```
+
+- Note that `$(this)` used inside an event handler selects the element the event occurred on! (The one that was clicked, here.)
 
 ???
 
 - Notice how the click event now works all __all__ the divs on the page
 - Notice how we used `this` inside the event handler function to specify the __div that is clicked__ rather than all the divs
 - If we wanted all the divs to fade out when __any__ div was clicked we could have used `$divs.fadeOut()` instead
+- Again remember that we will often see this done with anonymous functions:
+
+```javascript
+$divs.on('click',function() {
+  $(this).fadeOut();
+});
+```
 
 ---
 
@@ -237,6 +332,27 @@ $divs.on('click',function () {
 - Many of jQuery's functions perform some kind of action __over time__
 - `fadeOut()` takes an amount of time to complete, for instance
 - Most of these kinds of functions also allow us to specify a function to call when the effect is completed:
+
+```javascript
+$divs.on('click',divClicked);
+
+function divClicked() {
+  $(this).fadeOut(2000,fadeComplete);
+}
+
+function fadeComplete() {
+  console.log("Fade out completed!");
+}
+```
+
+---
+
+## Again, but with nested anonymous functions
+
+- Many of jQuery's functions perform some kind of action __over time__
+- `fadeOut()` takes an amount of time to complete, for instance
+- Most of these kinds of functions also allow us to specify a function to call when the effect is completed
+- Often it's the final argument in the function (but read the documentation!):
 
 ```javascript
 $divs.on('click',function () {

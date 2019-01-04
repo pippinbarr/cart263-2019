@@ -1,6 +1,6 @@
 ### CART 263 / Winter 2019 / Pippin Barr
 
-# Activity: OOP Circle Eater
+# Activity: Raving Redactionist
 
 ---
 

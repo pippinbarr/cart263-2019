@@ -95,10 +95,10 @@ Create an Avatar class (in a new file) that __extends__ the Agent class. Its con
 
 ```javascript
 class Avatar extends Agent {
-  constructor(x,y,size,healthLoss) {
+  constructor(x,y,size,sizeLoss) {
     super(x,y,size,'#cccc55');
     this.maxSize = size;
-    this.healthLoss = healthLoss;
+    this.sizeLoss = sizeLoss;
   }
 }
 ```
@@ -124,7 +124,7 @@ update() {
   this.x = mouseX;
   this.y = mouseY;
 
-  this.size = constrain(this.size - this.healthLoss,0,this.maxSize);
+  this.size = constrain(this.size - this.sizeLoss,0,this.maxSize);
   if (this.size === 0) {
     this.active = false;
   }

@@ -231,6 +231,8 @@ function checkCollision() {
 }
 ```
 
+---
+
 ## 10. Death
 
 Add an if-statement to the start of `draw()` that only calls the various functions we've defined __if the avatar is still alive/active__ and doesn't run them if not.
@@ -254,6 +256,7 @@ function draw() {
 ```
 
 - Another option:
+
 ```javascript
 function draw() {
   if (avatar.active) {
@@ -272,14 +275,16 @@ function draw() {
 
 Improve the code by
 1. Defining a function that puts the food in a random position and calling that function in `setup()` and the collision checking function instead of directly setting the food's position
-1. Define variables that determine how much the avatar shrinks and grows and use those variables instead of hard-coded numbers
+1. Define constants that determine how much the avatar shrinks and grows and use those variables instead of hard-coded numbers
 
 ???
 
 ```javascript
-let healthGain = 50;
-let healthLoss = 1;
+const AVATAR_SIZE_GAIN = 50;
+const AVATAR_SIZE_LOSS = 1;
 ```
+
+...
 
 ```javascript
 function positionFood() {
