@@ -16,7 +16,7 @@ Department of Design and Computation Arts
 
 Office: EV 6.745  
 Office hours location: TAG Research Centre, EV 11.435
-Office hours: TBD
+Office hours: Fridays, 13:30-15:30
 
 
 ## TAs
