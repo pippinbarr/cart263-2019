@@ -25,5 +25,11 @@ The basic nature of the course in terms of objectives, evaluation, and expectati
 ### [Course Schedule](course-information/course-schedule.md)
 Our home base through the course with links to slides, notes, exercises, and projects for each week.
 
+### [Project Templates](templates/)
+Downloadable templates for starting projects.
+
+### [External Resources](course-information/external-resources.md)
+Some general resources available online to improve programming etc.
+
 ### [Course Software Setup](course-information/course-software-setup.md)
 Simple instructions for installing the course software on your computer if you plan to use it.
