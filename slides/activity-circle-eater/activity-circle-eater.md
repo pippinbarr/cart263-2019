@@ -29,7 +29,7 @@ Create a variable called `avatar` that stores a javascript object with the follo
 - A maximum size
 - A current size
 - A boolean that tracks whether the avatar is alive/active
-- A color
+- A color (idea: store this as a hexadecimal string, e.g. `"#ff0000"` is red)
 
 ???
 
@@ -70,7 +70,7 @@ let food = {
 
 Fill in the p5 `setup()` function to
 - Create a canvas (you choose the size)
-- Set the position of the food to a random location
+- Set the position of the food to a random location on the canvas
 - Disable the cursor with `noCursor()`
 
 ???
@@ -102,7 +102,7 @@ function draw() {
 ## 6. Updating the avatar
 
 Define a function that updates the avatar's position. It should:
-1. Set the avatar's position to be the same as the mouse position (remember that p5 has built-in variable to tell you the mouse's position - look them up if you don't remember)
+1. Set the avatar's position to be the same as the mouse position (remember that p5 has built-in variables to tell you the mouse's position - look them up if you don't remember)
 1. Reduce the avatar's size by a set amount (consider using `constrain()` here to keep it between `0` and the maximum size)
 1. Check if the avatar's size has reached 0 and set the avatar to be inactive if so
 
@@ -199,9 +199,9 @@ function displayFood() {
 ## 9. Checking for a collision/eating
 
 Define a function that checks whether the avatar overlaps the food and reacts appropriately. It should:
-1. Calculate the distance from the avatar to the food
+1. Calculate the distance from the avatar to the food (p5 has a function for calculating the __dist__-ance between two points)
 1. Check if that distance is less that the sum of the radii of the avatar and food (e.g. they overlap)
-1. If so, increase the avatar's size by a set amount (but not more than its maximum) and move the food to a new random location
+1. If so, increase the avatar's size by a set amount (but don't let it get larger than than its maximum size) and move the food to a new random location
 1. If not, do nothing
 
 Call this function in `draw()` after the avatar update function.

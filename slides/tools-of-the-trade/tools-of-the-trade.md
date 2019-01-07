@@ -119,6 +119,7 @@ template-project/
 - Instead we will use a __package__ for Atom called atom-live-server
 - Make sure a file in the project is selected on the left, probably `script.js` makes the most sense for us since that's what we'll usually be editing
 - Go to `Packages > atom-live-server > Start server` (note the shortcut)
+- If you can't see it, you may need to go to `Settings > Packages` and __Update__ atom-live-server (CDA doesn't always keep it up to date)
 
 ???
 

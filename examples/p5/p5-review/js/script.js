@@ -145,8 +145,8 @@ function keyPressed() {
   clown.vy = -clown.vy;
 
   // p5 has special variables that work well with event handlers, such as keyCode which
-  // always contains the keycode of the last pressed key, and SPACE which contains the
-  // keycode for the spacebar.
+  // always contains the keycode of the last pressed key, and RETURN which contains the
+  // keycode for the return key.
   if (keyCode === RETURN) {
     backgroundColor = getRandomColor(0,200,200);
   }
@@ -154,7 +154,7 @@ function keyPressed() {
 
 // mousePressed
 //
-// mousePressed isa nother event handler, called automatically when the user clicks the mouse
+// mousePressed is another event handler, called automatically when the user clicks the mouse
 function mousePressed() {
   // Bark
   barkSFX.play();

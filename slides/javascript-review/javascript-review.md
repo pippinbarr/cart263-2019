@@ -36,9 +36,10 @@
 
 ## ES6
 
-- JavaScript is under constant development, so although it's quite stable, there are constantly new features being added to it
-- In this class we will mostly be using the most fundamental parts of the language, but we will use a couple of features from what is called the ES6 release of JavaScript:
-  - We will use `let` to declare variables (see later)
+- JavaScript is under constant development, so there are actually a series of "releases" of the language
+- In this class we will mostly be using the most fundamental parts of the language, which have been around forever, but we will use a couple of features from what is called the ES6 release of JavaScript:
+  - We will use `let` to declare variables
+  - We will use `const` to declare constants
   - We will use the `class` structure to define classes
 
 ???
@@ -332,7 +333,7 @@ let mobyDick = {
 };
 ```
 
-- This kind of object is declare inside curly brackets, with a list of __properties__ and __values__ separated by commas inside them
+- This kind of object is declared inside curly brackets, with a list of __properties__ and __values__ separated by commas inside them
 - Each property has a name (with the same rules as variables) and can store any kind of data type as its value
 
 ---
@@ -354,7 +355,7 @@ console.log(miffy.age); // 63
 
 ## null
 
-- `null` is used to indicated the absence of an object
+- `null` is used to indicate the absence of an object
 - You can use it yourself in cases where a variable is intended to contain an object but doesn't right now
 
 ```javascript
@@ -495,7 +496,7 @@ let mobyDick = {
   }
 }
 
-console.log(mobyDick,.name); // "Moby Dick"
+console.log(mobyDick.name); // "Moby Dick"
 mobyDick.stab(); // "From hell's heart I stab at thee!"
 ```
 
@@ -506,8 +507,8 @@ mobyDick.stab(); // "From hell's heart I stab at thee!"
 ## Arrays
 
 - An array is a data type that allows us to store values in numbered order
-- An array is numbered starting a `0`
-- We can declare an array with values in it we create it
+- An array is numbered starting at `0`
+- We can declare an array with values in it when we create it
 - We access array __elements__ by their __index__ (number)
 
 ```javascript
@@ -546,8 +547,8 @@ console.log(numbers); // [1,2,3,4,100]
 
 ```javascript
 let numbers = [1,2,3,4,5];
-let endValue = numbers.shift();
-console.log(endValue); // 1
+let firstValue = numbers.shift();
+console.log(firstValue); // 1
 console.log(numbers); // [2,3,4,5]
 numbers.unshift(100);
 console.log(numbers); // [100,2,3,4]
@@ -707,6 +708,33 @@ switch (state) {
 
 ---
 
+## Switch statement
+
+- Switch statements don't have to check numbers:
+
+```javascript
+let state = "HAPPY";
+
+switch (state) {
+  case "SAD":
+  console.log("*sob*");
+  break;
+
+  case "AMBIVALENT":
+  console.log("Meh.");
+  break;
+
+  case "HAPPY":
+  console.log("Wheeeee!");
+  break;
+
+  default:
+  console.log("I feel really default.");
+}
+```
+
+---
+
 ## Loops
 
 - Quite often in programming it's useful to repeat the same or similar set of code over and over again
@@ -749,6 +777,7 @@ while (x > 0) {
 - A do while loop is exactly the same as a while loop, except that it executes the code before checking the condition
 
 ```javascript
+let x = 5;
 do {
   console.log("Loop!");
   x--;
@@ -778,7 +807,7 @@ for (let i = 0; i < 10; i++) {
 
 ## For loops and arrays
 
-- For loops are especially marvelous as going through an array and doing stuff with it
+- For loops are especially marvelous at going through an array and doing stuff with it
 
 ```javascript
 let numbers = [1,2,3,5,7,11,13];
@@ -789,6 +818,15 @@ for (let i = 0; i < numbers.length; i++) {
 
 - Note the use of `numbers.length` to limit `i` (this guarantees it won't count past the length of the array)
 - This code will print out the value in every element of the array (the prime numbers from 1 to 13)
+
+---
+
+## That's JavaScript, folks
+
+- There's more to the language than what we've reviewed here
+- But we've covered the real fundamentals of JavaScript programming (and, not so secretly, most standard programming)
+- If anything in here felt weird or unfamiliar, please review it and/or ask for help
+- Moving forward, it will be assumed that you understand everything we've just seen (though there's always time for questions!)
 
 ---
 
