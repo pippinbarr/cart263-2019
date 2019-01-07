@@ -19,7 +19,7 @@ Section B: Michael Hemingway <[michael.hemingway@concordia.ca](michael.hemingway
 
 ## Important pages
 
-### [Course Outline](course-information/course-cutline.md)
+### [Course Outline](course-information/course-outline.md)
 The basic nature of the course in terms of objectives, evaluation, and expectations.
 
 ### [Course Schedule](course-information/course-schedule.md)
