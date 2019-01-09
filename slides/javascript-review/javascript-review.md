@@ -133,7 +133,7 @@ x = 101;
   - Boolean (truth values)
   - String (text)
   - Object (a more complex data structure)
-  - Null (also nothing, but usuall "on purpose")
+  - Null (also nothing, but usually "on purpose")
 
 ???
 
@@ -147,7 +147,7 @@ x = 101;
 
 ```javascript
 let x;
-console.log(x) // undefined
+console.log(x); // undefined
 ```
 
 - You can set something to `undefined` on purpose if you want
@@ -164,7 +164,7 @@ let meaningOfLife = undefined;
 
 ```javascript
 let x = 10;
-let pi = 3.14159
+let pi = 3.14159;
 ```
 
 - To write a number value we just write it like you'd expect
@@ -174,7 +174,7 @@ let pi = 3.14159
 ## NaN (Not a Number)
 
 - If you use certain functions that return a number, but you give them arguments that don't make sense, they return NaN
-- You can't check if something is NaN with equality, you need to use `isNan()`
+- You can't check if something is NaN with equality, you need to use `isNaN()`
 
 ```javascript
 let i = Math.sqrt(-1); // The square root of -1
@@ -216,7 +216,7 @@ let programmingIsTooHardForMe = false;
 ```javascript
 let theLetterA = "a";
 let greeting = "Hello, World";
-let mobyDick = "Call me Ishmael. Some years ago, ... only found another orphan. THE END."
+let mobyDick = "Call me Ishmael. Some years ago, ... only found another orphan. THE END.";
 ```
 
 - You write a string __inside quotation marks__
@@ -818,6 +818,30 @@ for (let i = 0; i < numbers.length; i++) {
 
 - Note the use of `numbers.length` to limit `i` (this guarantees it won't count past the length of the array)
 - This code will print out the value in every element of the array (the prime numbers from 1 to 13)
+
+---
+
+## forEach loops
+
+- There's another kind of loop specifically for arrays
+- It works by calling a _function_ on each element in an array
+
+```javascript
+let numbers = [1,2,3,5,7,11,13];
+numbers.forEach(function (element) {
+  console.log(element);
+});
+```
+
+- `forEach` is __not guaranteed to go through the array in order__
+- But it can be a nice way to do something to every array element when order doesn't matter, e.g.
+
+```javascript
+enemies.forEach(function (enemy) {
+  enemy.update();
+  enemy.display();
+});
+```
 
 ---
 

@@ -63,7 +63,7 @@
 
 ## Course software setup
 
-- There is a page about [Software Setup](https://github.com/pippinbarr/cart263-2019/blob/master/course-information/software-setup.md)
+- There is a page about [Software Setup](https://github.com/pippinbarr/cart263-2019/blob/master/course-information/course-software-setup.md)
 - This is intended to help those of you who want to use your own computers to do so
 - Hopefully you've already done this
 - If you haven't, do it now quietly while still listening to the class

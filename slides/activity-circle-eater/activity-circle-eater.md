@@ -119,7 +119,7 @@ function draw() {
 function updateAvatar() {
   avatar.x = mouseX;
   avatar.y = mouseY;
-  avatar.size = constrain(avatar.size - healthLoss,0,avatar.maxSize);
+  avatar.size = constrain(avatar.size - 0.5,0,avatar.maxSize);
   if (avatar.size === 0) {
     avatar.active = false;
   }
@@ -224,7 +224,7 @@ function draw() {
 function checkCollision() {
   let d = dist(avatar.x,avatar.y,food.x,food.y);
   if (d < avatar.size/2 + food.size/2) {
-    avatar.size = constrain(avatar.size + healthGain,0,avatar.maxSize);
+    avatar.size = constrain(avatar.size + 50,0,avatar.maxSize);
     food.x = random(0,width);
     food.y = random(0,height);
   }

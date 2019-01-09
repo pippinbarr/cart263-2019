@@ -21,9 +21,6 @@ img {
 
 
 
-
-
-
 /* REMARK-SPECIFIC CSS */
 
 .remark-code, .remark-inline-code {
@@ -50,12 +47,12 @@ div.remark-slide-content.title {
   font-size: 3em;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
-  color: cyan;
+  color: rgb(100,140,200);
 }
 
 .remark-slide-content h2 {
   font-size: 1.2em;
-  border-bottom: 2px solid magenta;
+  border-bottom: 2px solid rgb(100,140,200);
 }
 
 .remark-slide-content h3 {
