@@ -99,30 +99,94 @@ function reactionClicked(e) {
 
 ---
 
-## The jQuery library file
+## A process for "first contact" with a new library
 
-- As with any library, we should first go to its homepage and follow the instructions there
+1. Go to the homepage and read the introductory material
+1. Find resources provided for learning the library, especially __examples__ and __tutorials__
+1. If present, look at some examples to get a broad sense of the usage
+1. Obtain the library itself and incorporate it into a project template
+1. Run one or more examples in your own setup to confirm the library works
+1. Read/browse the API to get a sense of the range of the library's abilities
+1. Start an experiment of your own! (Early experiments should likely be based on example code.)
+
+- Let's try this out...
+
+---
+
+## The jQuery homepage
+
+- As with any library, we should first go to its homepage
   - https://www.jquery.com
-- Here we will see the option to download jQuery, but, if we read that download page more carefully we'll realise there are two options:
+- Our first task should always be to read the information on the homepage
+- After all, this is the stuff they really want us to know immediately
+- In the case of jQuery this includes a very quick introduction to what the library does
+
+---
+
+## Learning more
+
+- At this point we would want to know more about how the library works and we tend to have a couple of options at the homepage
+  - _Tutorials_ (such as in the [jQuery Learning Center](https://learn.jquery.com/))
+  - _Examples_ (such as in the [jQuery API Documentation](https://api.jquery.com/))
+- In our case we'll cover a brief ad hoc introduction with these slides
+- But be aware of and return to the above two options as well
+
+---
+
+## Obtaining the jQuery library
+
+- In order to actually try jQuery out, we need to have the library in our own setup
+- On the homepage we see the option to download jQuery, but, if we read that download page more carefully we'll realise there are two options:
   1. We can download jQuery as a JavaScript file and include it in our project in the typical way
   1. We can use a CDN (Content Delivery Network) version of the library that is hosted online
-
-???
-
-- If we download the file, we force our users to download jQuery when they access our webpage, but we will be able to develop offline. If we use the CDN, we take advantage of caching, but if we don't have access to the internet, we can't work on our project
+- If we download the file, we force our users to download jQuery when they access our webpage, but we will be able to develop offline.
+- If we use the CDN, we take advantage of caching, but if we don't have access to the internet, we can't work on our project
 - Many of the very popular libraries around are available via a CDN
 
 ---
 
 ## The CDN option
 
-- For now, we will use the CDN version by adding the following script tag to our project's `index.html`:
+- For now, we will use the CDN version
+- So, set up a basic project template (probably by downloading the one from the course repository)
+- And add the following script tag to our project's `index.html`:
 
 ```html
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+```
+
+---
+
+## Page content
+
+- In order to manipulate anything with jQuery, we'll need some HTML and CSS in our project...
+
+---
+
+## HTML
+
+- For now let's just add the following HTML to our `<body></body>` tag
+
+```html
+<div id="first">This is the first div.</div>
+<div id="second">This is the second div.</div>
+<div id="third">This is the third div.</div>
+```
+
+---
+
+## CSS
+
+- And let's add this CSS to our `stye.css`:
+
+```css
+div {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
 ```
 
 ---
@@ -142,6 +206,8 @@ function setup() {
 ```
 
 - This ensures our code will only run once the document is, well, ready.
+- Notice that we're __passing a function as an argument__ to the `ready()` method - this is the function that will be called when the document is ready
+- This is called an __event handler__ function, because it is called when an event (the document being ready) occurs
 
 ---
 
@@ -156,7 +222,7 @@ $(document).ready(function () {
 });
 ```
 
-- This is one of those things that can be alarming when you're first encountering it
+- This is one of those things that can be alarming syntactically when you're first encountering it
 - But it's definitely something you will see __a lot__ online, so it's well worth getting used to
 
 ???
@@ -187,11 +253,6 @@ function setup() {
 
 - Let's look at these more closely
 
-???
-
-- Note how you see a flicker of the `div` elements just when the page loads?
-- That's because the page loads and renders for one frame before jQuery's `hide()` function is applied to the elements
-- If we wanted them to be hidden from the beginning we should set `display: none;` in their CSS
 ---
 
 ## Selection and action
@@ -233,6 +294,13 @@ $divs.fadeIn(2000);
 - It fades the specified elements in over the specified amount of time
 - (The elements have to be hidden first or they can't be faded in of course!)
 
+???
+
+- Note how you see a flicker of the `div` elements just when the page loads?
+- That's because the page loads and renders for one frame before jQuery's `hide()` function is applied to the elements
+- If we wanted them to be hidden from the beginning we should set `display: none;` in their CSS
+- If we do that, we don't need the `.hide()` because they'll already be hidden!
+
 ---
 
 ## Selection and action in one
@@ -250,13 +318,13 @@ $('div').fadeIn(2000);
 
 ## Chaining effects
 
-- Also in fact, we can often __chain__ these functions together, because much of the time each jQuery action __returns__ the object that it just worked on, meaning you can add another action!
+- Also in fact, we can __chain__ these functions together, because jQuery actions __return__ the selection they just worked on, meaning you can add another action to that same selection!
 
 ```javascript
 $('div').hide().fadeIn(2000);
 ```
 
-- You can even write them on separate lines if that looks clearer
+- You can even write them on separate lines if that looks clearer to you
 
 ```javascript
 $('div')
@@ -272,7 +340,7 @@ $('div')
 
 - There are many kinds of jQuery actions we can apply to elements on the page
 - This is where you need to make friends with the documentation of the [jQuery API](http://api.jquery.com/)
-- In fact it's a great idea to explore it and see what's there, rather than searching for something specific
+- In fact it's important to explore it and see what's there, rather than searching for something specific
 - Of particular note are actions that work with CSS, attributes, and effects
 
 ---
@@ -330,7 +398,7 @@ $divs.on('click',function() {
 ## Event handlers
 
 - Many of jQuery's functions perform some kind of action __over time__
-- `fadeOut()` takes an amount of time to complete, for instance
+- `fadeOut()` can take an amount of time to complete as an argument, for instance
 - Most of these kinds of functions also allow us to specify a function to call when the effect is completed:
 
 ```javascript
@@ -348,11 +416,6 @@ function fadeComplete() {
 ---
 
 ## Again, but with nested anonymous functions
-
-- Many of jQuery's functions perform some kind of action __over time__
-- `fadeOut()` takes an amount of time to complete, for instance
-- Most of these kinds of functions also allow us to specify a function to call when the effect is completed
-- Often it's the final argument in the function (but read the documentation!):
 
 ```javascript
 $divs.on('click',function () {
@@ -377,11 +440,11 @@ $divs.on('click',function () {
 - jQuery can do more than hide and fade elements in and out
 - And it can handle more diverse events than just mouse clicks
 - It can do so much more it's pointless contemplating explaining it all here
-- Rather, we need to be able to engage with the jQuery API (Application Programming Interface)
-
-http://api.jquery.com/
-
-- (As well as the many, many tutorials and resources online.)
+- Rather, we need to be able to engage with
+  - the [jQuery Learning Center](https://learn.jquery.com)
+  - the [jQuery API](http://api.jquery.com/) (Application Programming Interface)
+  - the magic of [using Google](https://www.google.ca/) to ask technical questions about what you want to do
+  - the many, many other tutorials and resources online, e.g. [Google "jquery tutorial"](https://www.google.com/search?q=jquery+tutorial)
 
 ---
 

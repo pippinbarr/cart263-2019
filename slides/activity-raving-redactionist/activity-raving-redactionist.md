@@ -30,12 +30,14 @@ crossorigin="anonymous"></script>
 
 ## 2. Create the basic HTML content
 
-1. Create a number of paragraphs (inside `div` tags or `p` tags) in your HTML `body` containing placeholder text (I often use a [lorem ipsum generator](https://www.lipsum.com/)).
+1. Create a number of paragraphs (inside `div` tags) in your HTML `body` containing placeholder text (I often use a [lorem ipsum generator](https://www.lipsum.com/)).
 1. Add `span` tags with a `class` attribute of "redacted" around the parts of text you want to be redacted
 
-You should now be able to view the page in your browser, but of course it won't be redacted yet because that class doesn't exist!
+You should now be able to view the page in your browser, but of course it won't be redacted yet because that CSS class doesn't exist!
 
 ???
+
+__Solution:__
 
 ```html
 <div>
@@ -56,13 +58,15 @@ You should now be able to view the page in your browser, but of course it won't 
 
 ## 3. Set up basic CSS styles
 
-1. Style the `body` and `p` or `div` tags however you want to create margins, fonts, sizes, etc. that suit you
-1. Create a `redacted` class that sets the background color to black and the foreground color to transparent (this is to avoid people seeing the text when they highlight it), also remove text decoration if you want to
+1. Style the `body` and `div` tags however you want to create margins, fonts, sizes, etc. that suit you
+1. Create a `redacted` class that sets the background color to black and the foreground color to transparent (this is to avoid people seeing the text when they highlight it)
 1. Create a `revealed` class that sets the background color to transparent, and the foreground color to red (to induce panic!)
 
 When you view the page now, the text in the redacted spans should be black!
 
 ???
+
+__Solution:__
 
 ```css
 body {
@@ -79,12 +83,10 @@ div {
 .redacted {
   background-color: black;
   color: transparent;
-  text-decoration: none;
 }
 
 .revealed {
   background-color: transparent;
-  text-decoration: underline;
   color: red
 }
 ```
@@ -96,6 +98,8 @@ div {
 In `script.js` create the basic "document ready" code so that we can start writing our program in jQuery
 
 ???
+
+__Solution:__
 
 ```javascript
 $(document).ready(setup);
@@ -120,12 +124,16 @@ $(document).ready(function () {
 We're going to need a function that will randomly change a span from redacted to revealed. This function will be called repeatedly over time on all the spans so that eventually they'll all be revealed. For now, let's define that function.
 
 Define a function called `updateSpan` (or similar) that
-1. Generates a random number (note that JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
+1. Generates a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
 1. Check if the random number is less than a probability (e.g. `0.1` for 10% likelihood)
 1. If it is, remove the `redacted` class from the current span (using `this` as the selector) __and__
 1. Add the `revealed` class to the current span (using `this` as the selector)
 
+(Use the [jQuery API](https://api.jquery.com/) to find how to __add__ a __class__ and how to __remove__ a __class__)
+
 ???
+
+__Solution:__
 
 ```javascript
 function updateSpan() {
@@ -144,11 +152,15 @@ function updateSpan() {
 Each time we update the page we need to call `updateSpan` on __all__ span tags, so we need a function to do this, which we can call something like `update`. Define this function and in it:
 1. Use `each` to call `updateSpan` on all `span` tags
 
+(Look up the `.each()` method in the jQuery API)
+
 ???
+
+__Solution:__
 
 ```javascript
 function update() {
-  $spans.each(updateSpan);
+  $('span').each(updateSpan);
 }
 ```
 
@@ -162,9 +174,13 @@ We want the redactions to randomly disappear __over time__, so we'll need a timi
 
 1. In the function called by "document ready" call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
 
+(If you need to, Google `setInterval javascript` to see how it works.)
+
 Once this works, you should see the spans disappearing over time!
 
 ???
+
+__Solution:__
 
 ```javascript
 function setup () {
@@ -179,9 +195,13 @@ function setup () {
 We want the user to be able to redact revealed passages by clicking on them, so we need a click event handler using jQuery's `on` function
 
 1. Define a new function called something like `spanClicked` to handle clicks, in the function you should add the "redacted" class to the clicked span (with the `this` selector) and also remove the "revealed" class from the clicked span (`this` selector)
-1. In the "document ready" function, add a click event to all spans ("span" selector) using `on()` that calls your `spanClicked` function
+1. In the "document ready" function, add a 'click' event to all spans ("span" selector) using `on()` that calls your `spanClicked` function
+
+(Look up the `on` event in the jQuery API if you want to see an example.)
 
 ???
+
+__Solution:__
 
 ```javascript
 function setup () {
@@ -192,7 +212,23 @@ function setup () {
 function spanClicked() {
   $(this).removeClass('revealed');
   $(this).addClass('redacted');
-}s
+}
+```
+
+- Note that there is also a `.click()` method that does the same thing in a very slightly different way:
+
+```javascript
+$(document).ready(setup);
+
+function setup () {
+  setInterval(update,500);
+  $('span').click(spanClicked);
+};
+
+function spanClicked() {
+  $(this).removeClass('revealed');
+  $(this).addClass('redacted');
+}
 ```
 
 ---
@@ -204,6 +240,37 @@ If you're going to be using it repeatedly, it's often better to __store__ a jQue
 1. Declare a `$spans` variable at the top of the program
 1. At the start of the "document ready" function, store the selection of all "span" tags in the variable
 1. Throughout the program, wherever you used `$('span')` you can now use `$spans`
+
+???
+
+- In this case it's probably overkill, but it's good practice to get used to this kind of thing
+
+__Solution:__
+
+```javascript
+function setup () {
+  let $spans = $('span');
+  setInterval(update,500);
+  $spans.on('click',spanClicked);
+};
+
+function spanClicked() {
+  $(this).removeClass('revealed');
+  $(this).addClass('redacted');
+}
+
+function update() {
+  $spans.each(updateSpan);
+}
+
+function updateSpan() {
+  let r = Math.random();
+  if (r < 0.1) {
+    $(this).removeClass('redacted');
+    $(this).addClass('revealed');
+  }
+}
+```
 
 ---
 

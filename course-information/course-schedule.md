@@ -4,8 +4,8 @@
 - [Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism
 - [Week 3](#week-3) - jQuery
 - [Week 4](#week-4) - jQuery UI
-- [Week 5](#week-5) - Voice in, voice out [_Project 1 Due_]
-- [Week 6](#week-6) - Phaser
+- [Week 5](#week-5) - Phaser [_Project 1 Due_]
+- [Week 6](#week-6) - Voices
 - [Week 7](#week-7) - Sound synthesis
 - [Week 8](#week-8) - 3D [_Project 2 Due_]
 - [Week 9](#week-9) - Text generation, data
@@ -132,11 +132,10 @@
 ---
 
 # Week 5
-## Voice In, Voice Out, Project 1 hand-in (Week of 4 February 2019)
+## Phaser, Project 1 hand-in (Week of 4 February 2019)
 
 ## Topics
-- __ResponsiveVoice__
-- __annyang__
+- __Phaser__
 
 ## Hand-in
 - Project 1
@@ -147,10 +146,11 @@
 ---
 
 # Week 6
-## Phaser (Week of 11 February 2019)
+## Voices (Week of 11 February 2019)
 
 ## Topic
-- __Phaser__
+- __ResponsiveVoice__
+- __annyang__
 
 ## Hand-in
 - Assignment 4
