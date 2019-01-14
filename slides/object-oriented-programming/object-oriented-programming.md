@@ -38,7 +38,7 @@
 - In JavaScript there is more than one way to define classes and create objects
 - One way we commonly see online is by explicitly using the __prototype__ property
 - In this version we define a __constructor function__ with the name of the class, which usually creates the __properties__ of the class
-- And then add __methods__ (the __functions__ of that class) to the function's prototype
+- And then add __methods__ (the __functions__ of that class) to that function's prototype
 - And create objects from this class with the `new` keyword
 
 ---
@@ -56,7 +56,7 @@ Person.prototype.sayName = function () {
   console.log("Hello! My name is " + this.name);
 }
 
-Person.prototype.walkTo = function (destination) {
+Person.prototype.goTo = function (destination) {
   if (age < 3) {
     console.log("I crawl to " + destination);
   }
@@ -69,7 +69,7 @@ Person.prototype.walkTo = function (destination) {
 ```javascript
 let miffy = new Person("Miffy",63,true);
 miffy.sayName(); // "Hello! My name is Miffy"
-miffy.walkTo("the beach"); // "I walk to the beach"
+miffy.goTo("the beach"); // "I walk to the beach" (because her age is greater than 3)
 miffy.alive = false; // Changing a property
 ```
 
@@ -78,7 +78,7 @@ miffy.alive = false; // Changing a property
 ## `class` syntax
 
 - The ES6 edition of JavaScript introduced a new notation for writing classes
-- Fortunately, it's a much easier-to-understand way to write them
+- Fortunately, it's a much easier to understand way to write them
 - Because secretly JavaScript still actually uses the `prototype` this new way of writing classes is an example of what is called "syntactic sugar" (it just makes things easier, it doesn't really change anything)
 
 ---
@@ -97,7 +97,7 @@ class Person {
     console.log("Hello! My name is " + this.name);
   }
 
-  walkTo(destination) {
+  goTo(destination) {
     if (age < 3) {
       console.log("I crawl to " + destination);
     }
@@ -111,7 +111,7 @@ class Person {
 ```javascript
 let miffy = new Person("Miffy",63,true);
 miffy.sayName(); // "Hello! My name is Miffy"
-miffy.walkTo("the beach"); // "I walk to the beach"
+miffy.goTo("the beach"); // "I walk to the beach"
 miffy.alive = false; // Changing a property
 ```
 
@@ -131,7 +131,7 @@ miffy.alive = false; // Changing a property
 - You can stick with the `prototype` syntax or switch to the `class` syntax - they both achieve the same thing
 - In the next module, when we look at inheritance and polymorphism, we'll only use the `class` syntax for simplicity
 - We should still put our classes in a new JavaScript file named after the class and make sure to include the file in `index/html`
-- Basically, it's business as usual
+- Basically, it's business as usual with easier syntax
 
 ---
 

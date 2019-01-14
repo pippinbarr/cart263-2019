@@ -14,7 +14,7 @@ A game in which:
 - The player decreases in size over time, but gains size based on the food size when eating
 - If the player completely shrinks, the game is over
 
-But __object oriented this time!__
+And it's __object oriented this time!__
 
 ---
 
@@ -26,7 +26,7 @@ Go to the course website and download the template p5 project then open the proj
 
 ## 2. Create an Agent class
 
-Because both the avatar and the food share a number of properties (position, size, and color) it makes sense to create a __parent__ class that they will inherit from.
+Because both the avatar and the food share a number of properties (position, size, and color) it makes sense to create a __parent__ class that they will both inherit from.
 
 Create a class called `Agent` (in a new file) and define its constructor to take the following arguments and set them as properties:
 - An x and y position
@@ -35,7 +35,7 @@ Create a class called `Agent` (in a new file) and define its constructor to take
 
 Also set a property that is a boolean that tracks whether the avatar is alive/active, it should be set to `true`.
 
-(Don't forget to add the class file to `index.html`)
+(Don't forget to add the class file to a `script` tag in `index.html`)
 
 
 ???
@@ -60,7 +60,7 @@ Add a method to the Agent class that displays the agent on the screen, it should
 1. Check the active property and only display the agent it it's true
 1. Set the stroke to not display
 1. Set the fill to the color property
-1. Draw a circle at the location defined by the position properties of a size defined by the size property
+1. Draw a circle at the location defined by the position properties with a size defined by the size property
 1. Use `push()` and `pop()` around all the display instructions to avoid problems
 
 ???
@@ -108,7 +108,7 @@ class Avatar extends Agent {
 ## 5. Add an update method
 
 Add a method to the `Avatar` class that updates the avatar (to be called once per frame), it should:
-1. Check if the avatar is active and only continue is it is
+1. Check if the avatar is active and only continue if it is
 1. Update the position properties to match the mouse position
 1. Reduce the size by the size-loss property, constraining it to be between `0` and the maximum size property
 1. Check if the size has reached `0` and if so set the avatar to be inactive/dead
@@ -139,8 +139,8 @@ Now that we've defined the basics of an Agent and an Avatar, we should be able t
 
 1. Declare a variable to store the avatar at the top of your program
 1. In `setup()` create a canvas with whatever dimensions you like
-1. In `setup()` create a `new` Avatar object with appropriate arguments
-1. In `draw()` call the `update()` and `display()` methods of the avatar
+1. In `setup()` create a `new` Avatar object with appropriate arguments and store it in a variable
+1. In `draw()` call the `update()` and `display()` methods of the Avatar in the avatar variable
 
 You should now be able to run this program and see the avatar move with your mouse!
 
@@ -168,9 +168,8 @@ function draw() {
 
 Create a Food class (in a new file) that __extends__ the Agent class. Its constructor should
 1. Define parameters for position, minimum size, and maximum size
-1. Call the parent (Agent) constructor (using `super()`), passing the appropriate arguments
+1. Call the parent (Agent) constructor (using `super()`), passing the appropriate arguments including setting the size to a random number between the minimum and maximum sizes
 1. Store the minimum and maximum sizes as properties
-1. Set the size of the food to a random number between the minimum and maximum sizes
 
 (Don't forget to add the class file to `index.html`)
 
@@ -242,9 +241,9 @@ function draw() {
 We know we want the avatar to "eat" the food when they overlap, so we need a method to check if the avatar overlaps the food. We __could__ put this in Avatar, but it's actually a pretty generic idea, so we'll put it in Agent.
 
 In the Agent class, define a method that takes an argument containing another Agent and checks whether the current agent overlaps that agent. That is:
-1. Define a method that takes one parameter (the other agent)
+1. Define a method that takes one argument (the other agent)
 1. Check if the current agent is active and only carry out the rest if it is
-1. Calculate the distance from the current agent to the other agent
+1. Calculate the distance from the current agent to the other agent (use `dist()`)
 1. Check if that distance is less than that sum of the radii of the two agents
 1. If so, return true
 1. If not, return false
@@ -273,11 +272,11 @@ collide(other) {
 
 Now we can check if the avatar overlaps the food, we need to handle what happens when it does, so we need an "eating" method.
 
-In the Avatar class, define an eating method that takes one parameter (the food to be eaten) and handles eating it, that is:
+In the __Avatar__ class, define an eating method that takes one parameter (the food to be eaten) and handles eating it, that is:
 1. Define a method that takes a single argument (the food to eat)
 1. Check if the avatar is active and only carry out the rest if it is
 1. Add the size of the food to the size of the avatar (but limit it to the avatar's maximum size)
-1. Reset the food using the resetting method we defined earlier so it moves somewhere else and changes size
+1. Reset the food by calling its resetting method
 
 ???
 
@@ -298,7 +297,7 @@ eat(other) {
 
 We have all the pieces, now we need to add them to the main program. In `script.js`:
 
-1. In `draw()` add an if-statement that checks if the avatar overlaps the food (using the method we defined) - add this after that avatar is updated
+1. In `draw()` add an if-statement that checks if the avatar overlaps the food (using the method we defined earlier) - add this after that avatar is updated
 1. If it does, call the eating method we just defined (passing it the food)
 1. If it doesn't, do nothing
 

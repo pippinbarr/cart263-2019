@@ -1,7 +1,7 @@
 ## Index
 
-- __[Week 1](#week-1) - Introductions, JavaScript review__
-- [Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism
+- ~~[Week 1](#week-1) - Introductions, JavaScript review~~
+- __[Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism__
 - [Week 3](#week-3) - jQuery
 - [Week 4](#week-4) - jQuery UI
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]

@@ -14,9 +14,9 @@
 ## Inheritance
 
 - One thing that happens when writing classes is that we can often end up writing classes very similar to each other
-- For example you might be making a fancy version of Pong which has different kinds of balls, and you end up making a separate class for each type of ball
+- For example you might be making a fancy version of Pong which has different kinds of balls, and you end up making a separate class for each type of ball, repeating lots of the same code
 - This is clearly inefficient, and __inheritance__ is the solution
-- Let's look at a simpler example first
+- Let's look at a simple example first
 
 ???
 
@@ -143,7 +143,7 @@ class Cat extends Animal {
 
 ## Cat and Dog children
 
-- So we can create a child class that __extends__ a parent class
+- So we can create a child class that __extends__ or __inherits from__ a parent class
 - This means the child (Dog and Cat) will have all the properties and methods of the parent, plus whatever they add to it (`bark()` for `Dog` and `meow()` for `Cat`)
 
 ```javascript
@@ -200,10 +200,10 @@ fido.eat(); // "Nom nom nom" "*makes a huge mess*"
 
 ```javascript
 class Shape {
-  constructor(x,y,r) {
+  constructor(x,y,size) {
     this.x = x;
     this.y = y;
-    this.r = r;
+    this.size = size;
   }
 
   update() {
@@ -213,6 +213,7 @@ class Shape {
 
   display() {
     // A generic shape cannot be displayed
+    // But it makes sense to tell anyone extending this class to include one!
   }
 }
 ```
@@ -221,42 +222,46 @@ class Shape {
 
 ```javascript
 class Square extends Shape {
-  constructor(x,y,r) {
-    super(x,y,r);
+  constructor(x,y,size) {
+    super(x,y,size);
   }
 
   display() {
+    push();
     rectMode(CENTER);
     fill(255,0,0);
     noStroke();
-    rect(x,y,r,r);
+    rect(x,y,size,size);
+    pop();
   }
 }
 ```
 
 - Note there is no need to write the `update()` function for `Square` because it is inherited
-- We __do__ write the `display()` function so it overrides the empty `Shape` `display()`
+- We __do__ write the `display()` function so it __overrides__ the empty `Shape` `display()`
 - And we have to write the `constructor()` for Square, though in this case it only calls the parent constructor using `super()`
 
 ---
 
 ```javascript
 class Circle extends Shape {
-  constructor(x,y,r,c) {
-    super(x,y,r);
+  constructor(x,y,size,c) {
+    super(x,y,size);
     this.c = c; // Color
   }
 
   update() {
     super.update(); // Do the generic Shape update()
-    r += random(-1,1); // Also jiggle in size
+    size += random(-1,1); // Also jiggle in size
   }
 
   display() {
+    push();
     ellipseMode(CENTER);
     fill(c);
     noStroke();
-    ellipse(x,y,r,r);
+    ellipse(x,y,size);
+    pop();
   }
 }
 ```
@@ -292,10 +297,10 @@ function draw() {
 
 ---
 
-## Activity: `Line`
+## Mini-Activity: `Line`
 
 - Write a `Line` class that extends `Shape`
-- The constructor should take the (x,y) coordinates of each end of the line, so the `Line` class will need two extra properties for the (x,y) coordinates of the second point
+- The constructor should take the (x,y) coordinates of each end of the line, so the `Line` class will need two extra properties for the (x,y) coordinates of the second point (and won't have a size - make it `undefined` for `super` call)
 - Both the endpoint coordinates should jiggle around via `update()`
 - `display()` should draw the line on screen
 
@@ -316,8 +321,10 @@ class Line extends Shape {
   }
 
   display() {
+    push();
     stroke(0);
     line(x,y,x2,y2);
+    pop();
   }
 }
 ```
@@ -361,7 +368,7 @@ function draw() {
 
 - So inheritance is pretty great!
 - It allows us to define higher level classes that take care of common elements, and then to define child classes that add specifics without having to also define the generic stuff again
-- This solves our problem of different kinds of balls in Pong - we would define one `Ball` class that handles all the default behaviour of a ball, and then `extend` that class into child classes that add different behaviours
+- This solves our problem of different kinds of balls in Pong - we would define one `Ball` class that handles all the default behaviours of a ball, and then `extend` that class into child classes that add different behaviours
 
 ---
 
@@ -373,13 +380,13 @@ function draw() {
 - All the various children of `Shape` use both `update()` and `display()` to do their thing
 --
 
-- Given that they're all `Shape`s, it would make sense if we could group them together in an array
+- Given that they're all a kind of `Shape`, it would make sense if we could group them together in an array
 - We could think about it as an __array of Shapes__ and so only call the `Shape` level methods
 - And indeed we __can__ do this and it is referred to as __polymorphism__
 
 ---
 
-## Polymorphism version
+## Polymorphism
 
 ```javascript
 let shapes = [];
@@ -413,9 +420,9 @@ function draw() {
 
 ## Summary
 
-- At heart, Object-Oriented Programming is great because it allows us to keep related code together, and because it allows us to reuse that code by creating multiple objects from a single class
-- Inheritance adds to this power by allowing us to create related/similar classes without rewriting generic code
-- Polymorphism then makes our lives easier by allowing us to treat child classes as their parent class in situations where that benefits us (like collecting them together in an array)
+- At heart, __Object-Oriented Programming__ is great because it allows us to keep related code together, and because it allows us to reuse that code by creating multiple objects from a single class
+- __Inheritance__ adds to this power by allowing us to create related/similar classes without rewriting generic code
+- __Polymorphism__ then makes our lives easier by allowing us to treat child classes as their parent class in situations where that benefits us (like collecting them together in an array)
 
 ---
 
