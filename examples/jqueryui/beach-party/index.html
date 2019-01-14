@@ -1,0 +1,64 @@
+<!-- ************************************************************************
+
+CART 351
+Beach Party
+
+Author: Pippin Barr
+
+A "simple" application of jQuery UI's .draggable() and .resizable() to create
+a beach party on a totally Tubular beach. Basic concept is simple, but adds
+some UI niceties and ties a few ideas together (sound, Tubular backround video
+drag and (conditional) resize).
+
+************************************************************************ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Beach Party</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- jQuery! -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- jQuery UI! -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- Tubular! -->
+  <script src="js/jquery.tubular.1.0.js"></script>
+
+  <!-- Here is our script! -->
+  <script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="content">
+
+      <!-- We just need to include DIVs styled as our three "master" styles
+      to create the dragging interface. -->
+      <div id="instruction" class="flasher">← drag to party.</div>
+      <div class="master dancer"></div>
+      <div class="master warrior"></div>
+      <div class="master carlton"></div>
+
+    </div>
+
+    <!-- Here is the audio tag that contains an MP3 we can play on the page
+    using JavaScript - see above in handleMusic(). -->
+    <audio id="beethoven">
+      <source src="music/beethoven.mp3" type="audio/mpeg">
+      </audio>
+
+    </div>
+
+  </body>
+
+  </html>

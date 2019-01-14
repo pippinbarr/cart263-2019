@@ -1,0 +1,112 @@
+/*
+
+CART 351
+Beach Party
+
+Nothing too amazing happening in here except for setting sizing and
+positioning information for the various images we use.
+
+*/
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#content {
+	height: 100%;
+}
+
+#instruction {
+	color: white;
+	font-family: Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	position: absolute;
+	top: 92%;
+	left: 180px;
+}
+
+/* Dancer, the Warrior and Carlton all basically use the same CSS.
+	It's very likely I could have done a better job to avoid all the repetition. */
+
+/* The dancer class establishes a small starting size (for the interface version),
+sets the positioning to absolute (so we can place the dancer where we want), uses
+!important for this because sometimes jQuery's .resizable() was causing problems),
+and sets up the correct background-image (the animated GIF) and background sizing
+to fill the space. */
+.dancer {
+	top: 90%;
+	left: 10px;
+	width: 55px;
+	height: 60px;
+	position: absolute !important;
+	background-image: url("http://i.giphy.com/jn4N059jwA2UE.gif");
+	background-size: auto 100%;
+}
+
+/* The dancerMaster class is used to position the interface version and to allow
+us to distinguish between the interface version and the instances of the dancer
+we've put in the scene. */
+.master {
+}
+
+/* All more or less exactly the same for the others. */
+
+.warrior {
+	top: 90%;
+	left: 60px;
+	width: 49px;
+	height: 60px;
+	position: absolute !important;
+	background-image: url("http://i.giphy.com/8tqeeTuEvxjUY.gif");
+	background-size: auto 100%;
+}
+
+.carlton {
+	top: 90%;
+	left: 120px;
+	width: 42px;
+	height: 60px;
+	position: absolute !important;
+	background-image: url("http://i.giphy.com/cjiYC0tvtBNde.gif");
+	background-size: auto 100%;
+}
+
+.flasher {
+	animation: flasher 5s linear infinite;
+}
+
+@keyframes flasher {
+	10% { color: rgb(255,0,0)}
+	20% { color: rgb(0,255,0)}
+	30% { color: rgb(0,0,255)}
+	40% { color: rgb(255,0,255)}
+	50% { color: rgb(0,255,255)}
+	60% { color: rgb(255,255,0)}
+	70% { color: rgb(0,127,255)}
+	80% { color: rgb(255,127,255)}
+	90% { color: rgb(255,0,127)}
+}
+
+.fader {
+	animation: fadeout 5s linear forwards;
+}
+
+@keyframes fadeout {
+	100% { opacity: 0.0 }
+}
