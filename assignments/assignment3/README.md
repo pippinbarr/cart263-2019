@@ -11,6 +11,8 @@ __Deadline__: 11:59PM on the day of class on week of 28 January 2019.
 - Add a text to the page that tells the user how many of these secret words they have found so far
 - You should only be able to find any given secret _once_
 
+__NOTE:__ This brief is the bare minimum of additions in order to pass, please always use these assignments as a playground to try out more than the bare minimum!
+
 ---
 
 ## Learning objectives

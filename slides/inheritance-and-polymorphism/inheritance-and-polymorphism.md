@@ -195,7 +195,6 @@ fido.eat(); // "Nom nom nom" "*makes a huge mess*"
 
 ## A working example in p5
 
-- Let's create some code that runs with p5
 - We will define a parent `Shape` class and then create child classes to extend it
 
 ```javascript
@@ -207,8 +206,8 @@ class Shape {
   }
 
   update() {
-    x += random(-1,1);
-    y += random(-1,1);
+    this.x += random(-1,1);
+    this.y += random(-1,1);
   }
 
   display() {
@@ -217,6 +216,8 @@ class Shape {
   }
 }
 ```
+
+- Remember we put this code in a new file called `Shape.js` and include it in our `index.html`
 
 ---
 
@@ -231,17 +232,56 @@ class Square extends Shape {
     rectMode(CENTER);
     fill(255,0,0);
     noStroke();
-    rect(x,y,size,size);
+    rect(this.x,this.y,this.size,this.size);
     pop();
   }
 }
 ```
 
 - Note there is no need to write the `update()` function for `Square` because it is inherited
-- We __do__ write the `display()` function so it __overrides__ the empty `Shape` `display()`
+- We __do__ write `display()` so it __overrides__ the empty `Shape` `display()`
 - And we have to write the `constructor()` for Square, though in this case it only calls the parent constructor using `super()`
+- Remember we put this code in a new file called `Square.js` and include it in our `index.html`
 
 ---
+
+## A note on ordering
+
+- Note that when we're working with inheritance it __matters what order we include our files__ in `index.html`
+- We need to include the parent class first, then the children, so:
+
+```html
+<script src="js/Shape.js"></script>
+<script src="js/Square.js"></script>
+<script src="js/script.js"></script>
+```
+
+- This is because the definition of `Square` __uses__ `Shape`, so our program needs to know what a `Shape` is before we use it to define a `Square`
+- It also makes sense (though is not required) to include our main script last, since it uses all the things that precede it
+
+---
+
+```javascript
+let mySquare;
+
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+  mySquare = new Square(random(0,width),random(0,height),100);
+}
+
+function draw() {
+  mySquare.update();
+  mySquare.display();
+}
+```
+
+- Note that our square's `update()` is being handled by `Shape` class (the parent) while its `display()` is being handled by the `Square` class
+
+---
+
+- We can make other shapes just as easily
+- They can have specialised versions of the parent's method (e.g. `update()`)
+- Note we call the parent version of a function with `super`
 
 ```javascript
 class Circle extends Shape {
@@ -252,15 +292,15 @@ class Circle extends Shape {
 
   update() {
     super.update(); // Do the generic Shape update()
-    size += random(-1,1); // Also jiggle in size
+    this.size += random(-1,1); // Also jiggle in size
   }
 
   display() {
     push();
     ellipseMode(CENTER);
-    fill(c);
+    fill(this.c);
     noStroke();
-    ellipse(x,y,size);
+    ellipse(this.x,this.y,this.size);
     pop();
   }
 }
@@ -303,6 +343,7 @@ function draw() {
 - The constructor should take the (x,y) coordinates of each end of the line, so the `Line` class will need two extra properties for the (x,y) coordinates of the second point (and won't have a size - make it `undefined` for `super` call)
 - Both the endpoint coordinates should jiggle around via `update()`
 - `display()` should draw the line on screen
+- (__Warning__: Don't call the variable you store your `Line` object in `line` or it will interfere with p5's own `line()` function!)
 
 ???
 
@@ -316,14 +357,14 @@ class Line extends Shape {
 
   update() {
     super.update(); // Do the generic Shape update()
-    x2 += random(-1,1);
-    y2 += random(-1,1);
+    this.x2 += random(-1,1);
+    this.y2 += random(-1,1);
   }
 
   display() {
     push();
     stroke(0);
-    line(x,y,x2,y2);
+    line(this.x,this.y,this.x2,this.y2);
     pop();
   }
 }

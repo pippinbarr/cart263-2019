@@ -11,6 +11,8 @@ __Deadline__: 11:59PM on the day of class on week of 21 January 2019.
 - Make the food stay on the screen (either wrapping or constraining).
 - Use an array of multiple food objects instead of a single object
 
+__NOTE:__ This brief is the bare minimum of additions in order to pass, please always use these assignments as a playground to try out more than the bare minimum!
+
 ---
 
 ## Learning objectives

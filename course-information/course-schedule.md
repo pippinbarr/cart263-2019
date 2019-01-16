@@ -76,6 +76,7 @@
 - [__Assignment 2__](../assignments/assignment2/README.md)
 
 ## Resources
+- [Inheritance in ES5 with `prototype`](https://medium.com/@dange.laxmikant/simplified-inheritance-in-js-es5-way-60b4ff19b008)
 - [Coding Train on JavaScript/HTML/CSS with p5 (YouTube)](https://www.youtube.com/user/shiffman/playlists?shelf_id=14&view=50&sort=dd)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
@@ -101,11 +102,7 @@
 
 ## Homework
 - [__Assignment 3__](../assignments/assignment3/README.md)
-- Project 1
-
-## Exercises
-- [w3schools jQuery Exercises](https://www.w3schools.com/jquery/exercise_jq.asp)
-- [A Smarter Way to Learn jQuery Exercises](http://www.asmarterwaytolearn.com/jquery/index-of-exercises.html) [Need to register]
+- [__Project 1__](../projects/project1/README.md)
 
 ## Resources
 - [jQuery API](https://api.jquery.com)
@@ -116,18 +113,41 @@
 - [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
 - [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
 
+## Exercises
+- [w3schools jQuery Exercises](https://www.w3schools.com/jquery/exercise_jq.asp)
+- [A Smarter Way to Learn jQuery Exercises](http://www.asmarterwaytolearn.com/jquery/index-of-exercises.html) [Need to register]
+
 ---
 
 # Week 4
 ## jQuery UI (Week of 28 January 2019)
 
 ## Topic
-- __jQuery UI__
+- __jQuery UI__ ([Homepage](https://jqueryui.com/))
+
+## Activity
+- __Eat Up__ ([Slides (TBD)](), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/jqueryui/eat-up/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/jquery-ui/eat-up.zip))
+
+## Examples
+- __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
+- __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party.zip))
+
 
 ## Hand-in
 - [__Assignment 3__](../assignments/assignment1/README.md)
 ## Homework
-- Project 1
+- [__Project 1__](../projects/project1/README.md)
+
+## Resources
+- [jQuery UI Homepage](https://jqueryui.com/)
+- [Getting Started with jQuery UI](http://learn.jquery.com/jquery-ui/getting-started/)
+- [Learning jQuery UI (Official)](http://learn.jquery.com/jquery-ui/)
+- [jQuery UI Demos](https://jqueryui.com/demos/)
+- [jQuery UI API](https://api.jqueryui.com/)
+- [jQuery UI Tutorial from Tutorials Point](https://www.tutorialspoint.com/jqueryui/)
+
+## Exercises
+- [w3resource jQuery UI exercises](https://www.w3resource.com/jquery-ui-exercises/1/index.php)
 
 ---
 
@@ -138,7 +158,7 @@
 - __Phaser__
 
 ## Hand-in
-- Project 1
+- [__Project 1__](../projects/project1/README.md)
 ## Homework
 - Assignment 4
 - Project 2

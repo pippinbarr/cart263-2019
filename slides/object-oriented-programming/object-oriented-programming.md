@@ -57,7 +57,7 @@ Person.prototype.sayName = function () {
 }
 
 Person.prototype.goTo = function (destination) {
-  if (age < 3) {
+  if (this.age < 3) {
     console.log("I crawl to " + destination);
   }
   else {
@@ -98,7 +98,7 @@ class Person {
   }
 
   goTo(destination) {
-    if (age < 3) {
+    if (this.age < 3) {
       console.log("I crawl to " + destination);
     }
     else {
