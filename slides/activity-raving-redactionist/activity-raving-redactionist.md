@@ -95,7 +95,7 @@ div {
 
 ## 4. Start the program
 
-In `script.js` create the basic "document ready" code so that we can start writing our program in jQuery
+In `script.js` create the basic "document ready" code so that we can start writing our program in jQuery.
 
 ???
 
@@ -119,12 +119,67 @@ $(document).ready(function () {
 
 ---
 
-## 5. Thinking in functions
+## 5. Time!
 
-We're going to need a function that will randomly change a span from redacted to revealed. This function will be called repeatedly over time on all the spans so that eventually they'll all be revealed. For now, let's define that function.
+We want the redactions to randomly disappear __over time__, so we'll need a timing function. We'll use the `setInterval()` function to call a function repeatedly over time. `setInterval()` takes two parameters:
+- a _function_ to call each time the interval passes
+- the _length in milliseconds_ of the interval
 
-Define a function called `updateSpan` (or similar) that
-1. Generates a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
+1. Define an `update()` function at the bottom of your script and include a `console.log()` message in it that says something like "Update!"
+1. In the function called by "document ready" call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
+
+(If you need to, Google `setInterval javascript` to see how it works.)
+
+Once this works, you should see the "Update!" message repeating at the interval
+
+???
+
+__Solution:__
+
+```javascript
+function setup () {
+  setInterval(update,500);
+};
+
+function update() {
+  console.log("Update!");
+}
+```
+
+---
+
+## 6. Updating all the spans
+
+Each interval we update the page we want to check _all_ the spans on the page and potentially reveal each one individually, so we'll need to call a updating function on each span on the page to handle this.
+
+1. Define a new function called `updateSpan()` or similar and put a `console.log()` in it that reports something like "Updating span!"
+1. In your `update()` function use jQuery's `.each()` method to call this new function on all the spans on the page
+
+(Look up the `.each()` method in the jQuery API)
+
+???
+
+__Solution:__
+
+```javascript
+function update() {
+  console.log("Update!");
+  $('span').each(updateSpan);
+}
+
+function updateSpan() {
+  console.log("Updating span!");
+}
+```
+
+---
+
+## 7. Updating the individual spans
+
+Finally we want to define our `updateSpan()` function so it will randomly change a span from redacted to revealed. This function will be called repeatedly over time on all the spans so that eventually they'll all be revealed.
+
+In your `updateSpan` function:
+1. Generate a random number (note that in JavaScript we use `Math.random()` to generate a random number between `0` and `1`)
 1. Check if the random number is less than a probability (e.g. `0.1` for 10% likelihood)
 1. If it is, remove the `redacted` class from the current span (using `this` as the selector) __and__
 1. Add the `revealed` class to the current span (using `this` as the selector)
@@ -137,55 +192,13 @@ __Solution:__
 
 ```javascript
 function updateSpan() {
+  console.log("Updating span!");
   let r = Math.random();
   if (r < 0.1) {
     $(this).removeClass('redacted');
     $(this).addClass('revealed');
   }
 }
-```
-
----
-
-## 6. One function up
-
-Each time we update the page we need to call `updateSpan` on __all__ span tags, so we need a function to do this, which we can call something like `update`. Define this function and in it:
-1. Use `each` to call `updateSpan` on all `span` tags
-
-(Look up the `.each()` method in the jQuery API)
-
-???
-
-__Solution:__
-
-```javascript
-function update() {
-  $('span').each(updateSpan);
-}
-```
-
----
-
-## 7. Time!
-
-We want the redactions to randomly disappear __over time__, so we'll need a timing function. We'll use the `setInterval()` function to call a function repeatedly over time. This function takes two parameters:
-- a _function_ that call each time the interval passes
-- the _length in milliseconds_ of the interval
-
-1. In the function called by "document ready" call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
-
-(If you need to, Google `setInterval javascript` to see how it works.)
-
-Once this works, you should see the spans disappearing over time!
-
-???
-
-__Solution:__
-
-```javascript
-function setup () {
-  setInterval(update,500);
-};
 ```
 
 ---

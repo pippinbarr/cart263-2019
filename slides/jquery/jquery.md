@@ -206,6 +206,9 @@ function setup() {
 ```
 
 - This ensures our code will only run once the document is, well, ready.
+
+???
+
 - Notice that we're __passing a function as an argument__ to the `ready()` method - this is the function that will be called when the document is ready
 - This is called an __event handler__ function, because it is called when an event (the document being ready) occurs
 
@@ -343,6 +346,8 @@ $('div')
 - In fact it's important to explore it and see what's there, rather than searching for something specific
 - Of particular note are actions that work with CSS, attributes, and effects
 
+__Let's look at the API entry for `fadeIn()`__
+
 ---
 
 ## What kinds of selection are there?
@@ -355,7 +360,7 @@ $('div')
 $('div').not('.spooky')
 ```
 
-- or
+or
 
 ```javascript
 $('div:not(.spooky)')
@@ -366,8 +371,7 @@ $('div:not(.spooky)')
 ## Event handlers
 
 - Moving quickly along, the other major aspect of jQuery is handling events that occur on the page
-- This includes reacting to user input like mouse movements and clicks, key presses, and so on
-- As well as to other browser events
+- This includes reacting to user input like mouse movements and clicks, key presses, browser events, and so on
 - We use the `on()` function in jQuery to handle specific events on specific elements
 
 ```javascript
@@ -389,6 +393,24 @@ function divClicked() {
 
 ```javascript
 $divs.on('click',function() {
+  $(this).fadeOut();
+});
+```
+
+- Also note that you can use specific methods instead of `on()` which you will also find in the API, so a click can also be listened for like this:
+
+```javascript
+$divs.click(divClicked);
+
+function divClicked() {
+  $(this).fadeOut();
+}
+```
+
+- Or, with an anonymous function, like this:
+
+```javascript
+$divs.click(function () {
   $(this).fadeOut();
 });
 ```
