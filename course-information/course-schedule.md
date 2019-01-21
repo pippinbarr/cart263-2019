@@ -1,8 +1,8 @@
 ## Index
 
 - ~~[Week 1](#week-1) - Introductions, JavaScript review~~
-- __[Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism__
-- [Week 3](#week-3) - jQuery
+- ~~[Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism~~
+- __[Week 3](#week-3) - jQuery__
 - [Week 4](#week-4) - jQuery UI
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]
 - [Week 6](#week-6) - Voices
@@ -131,6 +131,7 @@
 ## Examples
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party.zip))
+- __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/),[Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
 
 ## Hand-in
@@ -155,13 +156,33 @@
 ## Phaser, Project 1 hand-in (Week of 4 February 2019)
 
 ## Topics
-- __Phaser__
+- __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/))
+- __Phaser 2/CE__ ([Homepage](https://github.com/photonstorm/phaser-ce), [Examples](http://phaser.io/examples), [API](https://photonstorm.github.io/phaser-ce/))
+
+## "Activity"
+- Making Your First Phaser 3 Game ([Tutorial](https://phaser.io/tutorials/making-your-first-phaser-3-game), [Tutorial Code](https://phaser.io/tutorials/making-your-first-phaser-3-game/phaser3-tutorial-src.zip), [Pippin's Hyper-Commented Tutorial Code](../activities/phaser/))
+
+## Examples
+- [Let's Play: Ancient Greek Punishment: Inversion Edition (Phaser 3)](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
+- [SNAKISMS (Phaser 2)](https://github.com/pippinbarr/SNAKISMS/)
 
 ## Hand-in
 - [__Project 1__](../projects/project1/README.md)
 ## Homework
 - Assignment 4
 - Project 2
+
+## Resources
+- Phaser 3
+  - [Phaser 3 Homepage](https://phaser.io/)
+  - [Phaser 3 Examples](http://labs.phaser.io/)
+  - [Phaser 3 API](https://photonstorm.github.io/phaser3-docs)
+  - [Making Your First Phaser 3 Game](https://phaser.io/tutorials/making-your-first-phaser-3-game)
+- Phaser 2/CE
+  - [Phaser CE Homepage](https://github.com/photonstorm/phaser-ce)
+  - [Phaser 2 Examples](http://phaser.io/examples)
+  - [Phaser CE Examples](https://codepen.io/collection/AMbZgY/)
+  - [Phaser CE API](https://photonstorm.github.io/phaser-ce/)
 
 ---
 
