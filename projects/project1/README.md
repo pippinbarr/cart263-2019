@@ -25,12 +25,6 @@ See also:
 
 ---
 
-## Starting code
-
-[assignment4.zip](assignment4.zip)
-
----
-
 ## Submission
 
 You will submit this exercise as a __comment__ on an __Issue__ on the course repository here:

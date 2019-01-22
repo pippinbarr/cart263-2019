@@ -375,7 +375,7 @@ $('div:not(.spooky)')
 - We use the `on()` function in jQuery to handle specific events on specific elements
 
 ```javascript
-$divs.on('click',divClicked);
+$('div').on('click',divClicked);
 
 function divClicked() {
   $(this).fadeOut();
@@ -392,7 +392,7 @@ function divClicked() {
 - Again remember that we will often see this done with anonymous functions:
 
 ```javascript
-$divs.on('click',function() {
+$('div').on('click',function() {
   $(this).fadeOut();
 });
 ```
@@ -400,7 +400,7 @@ $divs.on('click',function() {
 - Also note that you can use specific methods instead of `on()` which you will also find in the API, so a click can also be listened for like this:
 
 ```javascript
-$divs.click(divClicked);
+$('div').click(divClicked);
 
 function divClicked() {
   $(this).fadeOut();
@@ -410,7 +410,7 @@ function divClicked() {
 - Or, with an anonymous function, like this:
 
 ```javascript
-$divs.click(function () {
+$('div').click(function () {
   $(this).fadeOut();
 });
 ```
@@ -424,7 +424,7 @@ $divs.click(function () {
 - Most of these kinds of functions also allow us to specify a function to call when the effect is completed:
 
 ```javascript
-$divs.on('click',divClicked);
+$('div').on('click',divClicked);
 
 function divClicked() {
   $(this).fadeOut(2000,fadeComplete);
@@ -440,7 +440,7 @@ function fadeComplete() {
 ## Again, but with nested anonymous functions
 
 ```javascript
-$divs.on('click',function () {
+$('div').on('click',function () {
   $(this).fadeOut(2000,function () {
     console.log("Fade out completed!");
   });

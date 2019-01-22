@@ -128,9 +128,7 @@ We want the redactions to randomly disappear __over time__, so we'll need a timi
 1. Define an `update()` function at the bottom of your script and include a `console.log()` message in it that says something like "Update!"
 1. In the function called by "document ready" call `setInterval` with your `update` function and an appropriate interval time as arguments (500 milliseconds is probably reasonable)
 
-(If you need to, Google `setInterval javascript` to see how it works.)
-
-Once this works, you should see the "Update!" message repeating at the interval
+Once this works, you'll see the "Update!" message repeating at the interval
 
 ???
 
