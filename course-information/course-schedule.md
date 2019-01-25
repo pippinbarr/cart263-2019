@@ -105,13 +105,21 @@
 - [__Project 1__](../projects/project1/README.md)
 
 ## Resources
-- [jQuery API](https://api.jquery.com)
-- [jQuery Learning Centre](https://learn.jquery.com/)
-- [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
-- [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
-- [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/)
-- [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
-- [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
+- jQuery
+  - [jQuery API](https://api.jquery.com)
+  - [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) (a place to look up the possible events that can be checked with `on()`)
+  - [jQuery Learning Centre](https://learn.jquery.com/)
+  - [jQuery Fundamentals Tutorial](http://jqfundamentals.com/)
+  - [Codecademy jQuery Tutorial](https://www.codecademy.com/learn/learn-jquery)
+  - [w3schools jQuery Tutorial](https://www.w3schools.com/jquery/)
+  - [w3schools jQuery Examples](https://www.w3schools.com/jquery/jquery_examples.asp)
+  - [Tutorial Republic jQuery Examples](https://www.tutorialrepublic.com/jquery-examples.php)
+- HTML/CSS
+  - [w3schools HTML Tutorial](https://www.w3schools.com/html/)
+  - [w3schools CSS Tutorial](https://www.w3schools.com/css/)
+  - [HTMLDog Tutorials](http://www.htmldog.com/guides/)
+  - [Codecademy HTML Tutorial](https://www.codecademy.com/learn/learn-html)
+  - [Codecademy CSS Tutorial](https://www.codecademy.com/learn/learn-css)
 
 ## Exercises
 - [w3schools jQuery Exercises](https://www.w3schools.com/jquery/exercise_jq.asp)
