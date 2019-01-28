@@ -140,7 +140,7 @@
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
 - __Let's Play: Ancient Greek Punishment: It is as if Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-it-is-as-if-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-it-is-as-if-edition/))
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party.zip))
-- __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/),[Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
+- __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/), [Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
 
 ## Hand-in
@@ -199,14 +199,30 @@
 ## Voices (Week of 11 February 2019)
 
 ## Topic
-- __ResponsiveVoice__
-- __annyang__
+- __ResponsiveVoice__ ([Homepage](https://responsivevoice.org/), [API](https://responsivevoice.org/api/))
+- __annyang__ ([Homepage](https://www.talater.com/annyang/), [API](https://github.com/TalAter/annyang/blob/master/docs/README.md))
+
+## Activity
+-
+
+## Example
+- __Browser Feelings__
+- __Abuse__
+- __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
 
 ## Hand-in
-- Assignment 4
+- [__Assignment 4__](../assignments/assignment4/README.md)
 ## Homework
 - Assignment 5
 - Project 2
+
+## Resources
+- ResponsiveVoice
+  - [ResponsiveVoice Homepage](https://responsivevoice.org/)
+  - [ResponsiveVoice API](https://responsivevoice.org/api/)
+- annyang
+  - [annyang Homepage](https://www.talater.com/annyang/)
+  - [annyang API](https://github.com/TalAter/annyang/blob/master/docs/README.md)
 
 ---
 

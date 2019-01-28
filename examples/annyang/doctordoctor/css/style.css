@@ -1,0 +1,24 @@
+body {
+  font-family: Courier, monospace;
+  font-size: 1.5em;
+}
+
+#click-to-start {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#conversation {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 600px;
+}
+
+
+.dialog {
+  padding: 10px;
+}
+
+.dialog:nth-child(odd) {
+  background-color: grey;
+}
