@@ -41,8 +41,8 @@ function setup() {
   // The fly buzz should loop
   buzzSFX.loop = true;
 
-  // We'll start the fly buzzing on the first click
-  $fly.on('mouseover',function () {
+  // We'll start the fly buzzing on the first mouse interaction
+  $fly.on('mousedown',function () {
     buzzSFX.play();
   });
 }

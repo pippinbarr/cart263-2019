@@ -190,7 +190,7 @@ function chew() {
 
 ## 9. Add sound effects
 
-1. Add a buzzing sound effect to the program, set it to loop and add a 'mouseover' event to the fly element that plays the buzzing sound (to avoid problems with triggering sounds before any interaction)
+1. Add a buzzing sound effect to the program, set it to loop and add a 'mousedown' event to the fly element that plays the buzzing sound (to avoid problems with triggering sounds before any interaction)
 1. Stop/pause the buzzing sound effect when the user drops the fly on the mouth and it vanishes
 1. Add a chewing sound effect to the program, play it when the user first drops the fly on the mouth, and then play it every time the mouth is changed to the closed image
 
@@ -212,7 +212,7 @@ let crunchSFX = new Audio("assets/sounds/crunch.wav");
 // In document ready
 buzzSFX.loop = true;
 
-$fly.on('mouseover',function () {
+$fly.on('mousedown',function () {
   buzzSFX.play();
 });
 
