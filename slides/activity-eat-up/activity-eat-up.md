@@ -9,7 +9,7 @@
 An experience in which:
 
 - We see an image of a mouth and a fly on screen
-- The fly is making a buzzing sound
+- The fly starts making a buzzing sound on mouse over
 - We can drag the fly around on the screen
 - If we drop the fly on the mouth, the fly vanishes and the mouth starts chewing (and making a chewing sound)
 - Disgusting!
@@ -27,6 +27,7 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
 <link rel="stylesheer" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
 <script
 src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
@@ -45,7 +46,7 @@ crossorigin="anonymous"></script>
   1. One should be an image of a fly with an `id` of `fly`
   1. (Obviously you'll need to put the images themselves in the appropriate folder and link to it)
 
-(You can obtain these images here: https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/assets/images)
+(To save time, use the images here: https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/assets/images)
 
 You should now be able to view the page in your browser, and see a mouth and a fly.
 
@@ -80,7 +81,7 @@ function setup() {
 
 ## 4. Get references to the mouth and fly elements on the page
 
-1. Declare two variables at the top of your program to store the mouth and fly elements (since we're using jQuery you shoudl prefix the variable names with `$`)
+1. Declare two variables at the top of your program to store the mouth and fly elements (since we're using jQuery you should prefix the variable names with `$`)
 1. In your "document ready" function, use jQuery to select the two elements on the page and store them in the appropriate variables
 
 ???
@@ -159,7 +160,7 @@ function onDrop(event,ui) {
 1. After removing the fly, use `setInterval()` to repeated call a `chew` function at some interval (you can tweak the number to your liking)
 1. Define the `chew()` function in your code
 1. In the function you should:
-  1. Check if the current image displayed in the mouse element is open (use jQuery's `attr()` function to check if the `src` attribute matches the path of the open mouth image)
+  1. Check if the current image displayed in the mouth element is open (use jQuery's `attr()` function to check if the `src` attribute matches the path of the open mouth image)
   1. If it is, swap the image to the closed image (use `attr()` to __set__ the `src` property)
   1. If it isn't it must be closed, so swap the image to the open image
 
@@ -189,13 +190,42 @@ function chew() {
 
 ## 9. Add sound effects
 
-1. Add a buzzing sound effect to the program, set it to loop and play in your document ready function
+1. Add a buzzing sound effect to the program, set it to loop and add a 'mouseover' event to the fly element that plays the buzzing sound (to avoid problems with triggering sounds before any interaction)
 1. Stop/pause the buzzing sound effect when the user drops the fly on the mouth and it vanishes
 1. Add a chewing sound effect to the program, play it when the user first drops the fly on the mouth, and then play it every time the mouth is changed to the closed image
 
 (You can get sounds for this here: https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/assets/sounds)
 
 Now when you run the page you should hear buzzing, and when you drop the fly on the mouth it should vanish and stop buzzing, and a chewing sound should start. Done!
+
+???
+
+__Solution:__
+
+```javascript
+// At top of program
+let buzzSFX = new Audio("assets/sounds/buzz.mp3");
+let crunchSFX = new Audio("assets/sounds/crunch.wav");
+
+...
+
+// In document ready
+buzzSFX.loop = true;
+
+$fly.on('mouseover',function () {
+  buzzSFX.play();
+});
+
+...
+
+// In the drop handler function
+crunchSFX.play();
+
+...
+
+// In the mouse closed part of your if state in the interval function
+crunchSFX.play();
+```
 
 ---
 

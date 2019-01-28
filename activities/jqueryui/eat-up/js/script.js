@@ -38,9 +38,13 @@ function setup() {
   // Make it draggable
   $fly.draggable();
 
-  // Start up the buzzing of the fly
+  // The fly buzz should loop
   buzzSFX.loop = true;
-  buzzSFX.play();
+
+  // We'll start the fly buzzing on the first click
+  $fly.on('mouseover',function () {
+    buzzSFX.play();
+  });
 }
 
 // flyDropped(event,ui)

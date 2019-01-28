@@ -2,8 +2,8 @@
 
 - ~~[Week 1](#week-1) - Introductions, JavaScript review~~
 - ~~[Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism~~
-- __[Week 3](#week-3) - jQuery__
-- [Week 4](#week-4) - jQuery UI
+- ~~[Week 3](#week-3) - jQuery~~
+- __[Week 4](#week-4) - jQuery UI__
 - [Week 5](#week-5) - Phaser [_Project 1 Due_]
 - [Week 6](#week-6) - Voices
 - [Week 7](#week-7) - Sound synthesis
@@ -138,12 +138,13 @@
 
 ## Examples
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
+- __Let's Play: Ancient Greek Punishment: It is as if Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-it-is-as-if-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-it-is-as-if-edition/))
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party.zip))
 - __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/),[Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
 
 ## Hand-in
-- [__Assignment 3__](../assignments/assignment1/README.md)
+- [__Assignment 3__](../assignments/assignment3/README.md)
 ## Homework
 - [__Project 1__](../projects/project1/README.md)
 
@@ -177,7 +178,7 @@
 ## Hand-in
 - [__Project 1__](../projects/project1/README.md)
 ## Homework
-- Assignment 4
+- [__Assignment 4__](../assignments/assignment4/README.md)
 - Project 2
 
 ## Resources
