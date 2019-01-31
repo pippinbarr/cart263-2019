@@ -138,7 +138,7 @@
 
 ## Examples
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
-- __Let's Play: Ancient Greek Punishment: It is as if Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-it-is-as-if-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-it-is-as-if-edition/))
+- __Let's Play: Ancient Greek Punishment: UI Edition__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-ui-edition/), [Source Code](https://www.github.com/pippinbarr/lets-play-ancient-greek-punishment-ui-edition/))
 - __Beach Party__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/beach-party.zip))
 - __It is as if you were doing work__ ([Online](https://pippinbarr.github.io/itisasifyouweredoingwork/), [Repository](https://github.com/pippinbarr/itisasifyouweredoingwork/))
 
