@@ -26,7 +26,7 @@ src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
 
-<link rel="stylesheer" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
 <script
 src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
@@ -63,7 +63,7 @@ __Solution:__
 
 ## 3. Start the script
 
-1. Add the basic "document ready" code to your `script.js` so you're reading to start writing code
+1. Add the basic "document ready" code to your `script.js` so you're ready to start writing code
 
 ???
 

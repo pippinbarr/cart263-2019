@@ -134,7 +134,7 @@
 - __jQuery UI__ ([Homepage](https://jqueryui.com/))
 
 ## Activity
-- __Eat Up__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-eat-up), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/jqueryui/eat-up/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/jquery-ui/eat-up.zip))
+- __Eat Up__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-eat-up), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/jqueryui/eat-up/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/jqueryui/eat-up/), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/jqueryui/eat-up.zip))
 
 ## Examples
 - __Endless Dialogs__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs/), [Source Code](https://pippinbarr.github.io/cart263-2019/examples/jqueryui/endless-dialogs.zip))
@@ -206,8 +206,8 @@
 -
 
 ## Example
-- __Browser Feelings__
-- __Abuse__
+- __Browser Feelings__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/browserfeelings/))
+- __Abuse__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/abuse/))
 - __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
 
 ## Hand-in
