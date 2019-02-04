@@ -230,17 +230,23 @@
 ## Sound Synthesis (Week of 18 February 2019)
 
 ## Topics
-- __Howler__
-- __Gibber__
-- __Flocking__
-- __Pizzacato__
-- __Tone.js__
+- __Howler__ ([Homepage](https://howlerjs.com/))
+- __Gibber__ ([Homepage](http://charlie-roberts.com/gibber/gibber-lib-js/), [p5 version](http://charlie-roberts.com/gibber/p5-gibber/), [GitHub for JavaScript version](https://github.com/charlieroberts/gibber.lib))
+- __Pizzacato__ ([Homepage](https://alemangui.github.io/pizzicato/))
+
+## Activity
+- __???__
+
+## Examples
+- __Sound System I__ ([Online](http://www.pippinbarr.com/games/soundsystemi/))
+- __Sound System II__ ([Online](http://www.pippinbarr.com/games/soundsystemii/))
+- __Jostle Parent__ ([Online](https://unwinnable.com/2015/04/09/jostle-parent/))
 
 ## Hand-in
-- Assignment 5
+- [__Assignment 5__](../assignments/assignment5/README.md)
 ## Homework
 - Assignment 6
-- Project 2
+- [__Project 2__](../projects/project2/README.md)
 
 ---
 
@@ -248,7 +254,7 @@
 ## No Class (Week of 25 February 2019)
 
 ## Homework
-- Project 2
+- [__Project 2__](../projects/project2/README.md)
 
 ---
 
@@ -260,7 +266,7 @@
 - __A-Frame__
 
 ## Hand-in
-- Project 2
+- [__Project 2__](../projects/project2/README.md)
 ## Homework
 - Assignment 6
 - Project 3
