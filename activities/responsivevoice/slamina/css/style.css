@@ -1,0 +1,11 @@
+body {
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+#click-to-begin {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center; 
+}

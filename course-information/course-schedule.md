@@ -3,8 +3,8 @@
 - ~~[Week 1](#week-1) - Introductions, JavaScript review~~
 - ~~[Week 2](#week-2) - Object-Oriented Programming, Inheritance, Polymorphism~~
 - ~~[Week 3](#week-3) - jQuery~~
-- __[Week 4](#week-4) - jQuery UI__
-- [Week 5](#week-5) - Phaser [_Project 1 Due_]
+- ~~[Week 4](#week-4) - jQuery UI~~
+- __[Week 5](#week-5) - Phaser__ [_Project 1 Due_]
 - [Week 6](#week-6) - Voices
 - [Week 7](#week-7) - Sound synthesis
 - [Week 8](#week-8) - 3D [_Project 2 Due_]
@@ -203,9 +203,9 @@
 - __annyang__ ([Homepage](https://www.talater.com/annyang/), [API](https://github.com/TalAter/annyang/blob/master/docs/README.md))
 
 ## Activity
--
+- __Slamina__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-slamina), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/responsivevoice/slamina), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/responsivevoice/slamina), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/responsivevoice/slamina.zip))
 
-## Example
+## Examples
 - __Browser Feelings__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/browserfeelings/))
 - __Abuse__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/abuse/))
 - __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
@@ -213,8 +213,8 @@
 ## Hand-in
 - [__Assignment 4__](../assignments/assignment4/README.md)
 ## Homework
-- Assignment 5
-- Project 2
+- [__Assignment 5__](../assignments/assignment5/README.md)
+- [__Project 2__](../projects/project2/README.md)
 
 ## Resources
 - ResponsiveVoice
