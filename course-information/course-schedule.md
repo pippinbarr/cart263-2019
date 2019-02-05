@@ -179,7 +179,7 @@
 - [__Project 1__](../projects/project1/README.md)
 ## Homework
 - [__Assignment 4__](../assignments/assignment4/README.md)
-- Project 2
+- [__Project 2__](../projects/project2/README.md)
 
 ## Resources
 - Phaser 3
