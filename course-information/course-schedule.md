@@ -175,6 +175,8 @@
 - [Let's Play: Ancient Greek Punishment: Inversion Edition (Phaser 3)](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-inversion-edition)
 - [SNAKISMS (Phaser 2)](https://github.com/pippinbarr/SNAKISMS/)
 
+## Studio time for [__Project 1__](../projects/project1/README.md)
+
 ## Hand-in
 - [__Project 1__](../projects/project1/README.md)
 ## Homework
@@ -264,6 +266,8 @@
 ## Topic
 - __three.js__
 - __A-Frame__
+
+## Studio time for [__Project 2__](../projects/project2/README.md)
 
 ## Hand-in
 - [__Project 2__](../projects/project2/README.md)
