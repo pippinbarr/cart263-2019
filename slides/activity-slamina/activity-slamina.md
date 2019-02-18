@@ -66,7 +66,7 @@ function setup() {
 
 1. Declare an array variable at the top of your script called something like `animals`
 1. Go to https://github.com/dariusk/corpora/blob/master/data/animals/common.json and copy the array of animal names (e.g. the stuff the square brackets)
-1. Paste the animals into you `animals` array declaration so the array contains all the animal names
+1. Paste the animals into your `animals` array declaration so the array contains all the animal names
 
 ???
 
@@ -252,7 +252,7 @@ function startGame() {
 ## 5. Adding buttons
 
 1. Add a variable to the top of the program called `correctAnimal` that will store the current correct animal to guess
-1. Define an `addButton(label)` function at the bottom of your script (label with be the argument it is passed with the animal name to put on the button):
+1. Define an `addButton(label)` function at the bottom of your script (label will be the argument it is passed with the animal name to put on the button):
   1. Use jQuery to create a `div` element with class `guess` and put it in a variable
   1. Use jQuery to set the text of the element to the label provided
   1. Use jQuery UI to turn the element into a button
@@ -296,12 +296,12 @@ function addButton(label) {
 ## 6. Generating guesses
 
 1. Declare an empty array called `answers`, a constant called `NUM_OPTIONS` with the number of guesses you want, and a variable called `correctAnimal` at the top of your script,
-1. Define a function called `newRound()` and add the following
+1. Define a function called `newRound()` and add the following:
   1. Set the `answers` array to be empty
-  1. Create a loop that goes up to `NUM_OPTIONS` that:
-    1. Chooses a random animal from the `animals` array
-    1. Uses `addButton` to add a button with the animal's name to the page
-    1. Adds the animal's name to the `answers`
+  1. Create a for loop that counts up to `NUM_OPTIONS` that:
+      - Chooses a random animal from the `animals` array
+      - Uses `addButton` to add a button with the animal's name to the page
+      - Adds the animal's name to the `answers`
   1. Set `correctAnimal` to a random element in the `answers` array
 1. Call `newRound()` in `startGame()` (remove your earlier `addButton()` calls from there)
 
