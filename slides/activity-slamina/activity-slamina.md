@@ -18,7 +18,7 @@ An experience in which:
 
 ## 1. Start a project
 
-Download the [template jQuery project](https://pippinbarr.github.io/cart263-2019/templates/template-jquery-project.zip) __or__ download the [basic template](https://pippinbarr.github.io/cart263-2019/templates/template-project.zip) and add jQuery and jQuery UI to it yourself.
+Download the [template jQuery project](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-jquery-project.zip) __or__ download the [basic template](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-project.zip) and add jQuery and jQuery UI to it yourself.
 
 Add ResponsiveVoice to the project
 
