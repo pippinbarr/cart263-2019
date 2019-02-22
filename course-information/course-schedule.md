@@ -217,7 +217,7 @@
 - __Browser Feelings__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/browserfeelings/))
 - __Abuse__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/abuse/))
 - __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
-- __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/nonsense-generator/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/nonsense-generator/))
+- __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/nonsense-generator/index.html), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/nonsense-generator/))
 
 ## Hand-in
 - [__Assignment 4__](../assignments/assignment4/README.md)
