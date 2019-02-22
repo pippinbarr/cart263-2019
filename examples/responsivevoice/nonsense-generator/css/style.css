@@ -1,0 +1,13 @@
+/*********************************************
+
+This is the style file for this project.
+
+**********************************************/
+
+body {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 500px;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25em;
+}
