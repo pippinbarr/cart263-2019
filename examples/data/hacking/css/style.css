@@ -1,0 +1,43 @@
+/*
+
+You Are Hacking Into the Mainframe
+Pippin Barr
+
+Basic styling to create our coding window and timer.
+
+*/
+
+body {
+  background-color: black;
+}
+
+#window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0px 0px -450px;
+  font-family: monospace;
+  font-size: 1.5em;
+  color: #0f0;
+  height: 500px;
+  width: 800px;
+  border: 1px dashed #0f0;
+}
+
+#titlebar {
+  height: 50px;
+  width: 750px;
+  font-weight: bold;
+  background-color: #0f0;
+  color: #000;
+  vertical-align: middle;
+  line-height: 50px;
+  padding-left: 50px;
+}
+
+#code {
+  width: 700px;
+  height: 350px;
+  padding: 50px;
+  overflow: scroll;
+}

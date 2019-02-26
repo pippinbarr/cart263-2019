@@ -6,15 +6,15 @@
 - ~~[Week 4](#week-4) - jQuery UI~~
 - ~~[Week 5](#week-5) - Phaser [_Project 1 Due_]~~
 - ~~[Week 6](#week-6) - Felix Khaled Barr is born~~
-- __[Week 7](#week-7)__ - Voices
-- [Reading Week](#reading-week)
-- [Week 8](#week-8) - 3D [_Project 2 Due_]
+- ~~[Week 7](#week-7) - Voices~~
+- ~~[Reading Week](#reading-week)~~
+- __[Week 8](#week-8) - 3D__ [_Project 2 Due_]
 - [Week 9](#week-9) - Text generation, data
 - [Week 10](#week-10) - Sensors / Sounds
 - [Week 11](#week-11) - Node.js, Electron
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
-- [Week 14](#week-14) - No class [_Project 3 Due_]
+- [Week 14](#week-14) - Studio (Make-up class)
 
 ---
 
@@ -217,7 +217,7 @@
 - __Browser Feelings__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/browserfeelings/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/browserfeelings/))
 - __Abuse__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/abuse/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/abuse/))
 - __Doctor, Doctor__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/annyang/doctordoctor/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
-- __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/nonsense-generator/index.html), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/responsivevoice/nonsense-generator/))
+- __Nonsense Generator__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/responsivevoice/nonsense-generator/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/annyang/doctordoctor/))
 
 ## Hand-in
 - [__Assignment 4__](../assignments/assignment4/README.md)
@@ -250,33 +250,40 @@
 ## 3D, Project 2 hand-in (Week of 4 March 2019)
 
 ## Topic
-- __three.js__
-- __A-Frame__
+- __three.js__ ([Homepage](https://threejs.org/))
+- __A-Frame__ ([Homepage](https://aframe.io/), [A-Frame School](https://aframe.io/aframe-school/#/))
 
 ## Studio time for [__Project 2__](../projects/project2/README.md)
 
 ## Hand-in
 - [__Project 2__](../projects/project2/README.md)
 ## Homework
-- Assignment 6
-- Project 3
+- [__Project 3__](../projects/project3/README.md)
 
 ---
 
 # Week 9
-# Text generation and Data (Week of 11 March 2019)
+# Text and Data (Week of 11 March 2019)
 
 ## Topics
-- __RiTA__
-- __Tracery__
-- __Eliza.js__
-- __JSON__
+- __RiTA__ ([Homepage](https://rednoise.org/rita/))
+- __Data__ (jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
+- __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
+- See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
+- __Template strings__ ([MDN Reference entry](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
 
-## Hand-in
-- Assignment 6
+## Activity
+- __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/data/condiments.zip))
+
+## Examples
+- __Beat Poetry__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/beatpoetry/))
+- __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/hacking/))
+- __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/frankenstein-and-prejudice/))
+
+
 ## Homework
-- Assignment 7
-- Project 3
+- Assignment 6
+- [__Project 3__](../projects/project3/README.md)
 
 ---
 
@@ -284,16 +291,15 @@
 ## Sensors (Week of 18 March 2019)
 
 ## Topics
+- __localStorage__
 - __Tracking.js__
-- __GPS__
-- __Accelerometers__
-- __Time__
+- __Geolocation__ ([w3schools introduction](https://www.w3schools.com/html/html5_geolocation.asp))
 
 ## Hand-in
-- Assignment 7
+- Assignment 6
 ## Homework
-- Assignment 8
-- Project 3
+- Assignment 7
+- [__Project 3__](../projects/project3/README.md)
 
 ---
 
@@ -305,9 +311,10 @@
 - __Electron__
 
 ## Hand-in
-- Assignment 8
+- Assignment 7
 ## Homework
-- Project 3
+- [__Project 3__](../projects/project3/README.md)
+- Assignment 8
 
 ---
 
@@ -317,7 +324,7 @@
 ## Hand-in
 - Assignment 8
 ## Homework
-- Project 3
+- [__Project 3__](../projects/project3/README.md)
 
 ---
 
@@ -325,12 +332,12 @@
 ## Studio (Week of 8 April 2019)
 
 ## Homework
-- Project 3
+- [__Project 3__](../projects/project3/README.md)
 
 ---
 
 # Week 14
-## No Class (Week of 15 April 2019)
+## Studio (make-up class) (Week of 15 April 2019)
 
 ## Hand-in
-- Project 3
+- [__Project 3__](../projects/project3/README.md) (Sunday, 21 April 2019)
