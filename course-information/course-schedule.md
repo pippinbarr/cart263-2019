@@ -248,8 +248,8 @@
 # 3D, Project 2 hand-in (Week of 4 March 2019)
 
 ## Topic
-- __three.js__ ([Homepage](https://threejs.org/))
-- __A-Frame__ ([Homepage](https://aframe.io/), [A-Frame School](https://aframe.io/aframe-school/#/))
+- __A-Frame__ ([Homepage](https://aframe.io/), [A-Frame School](https://aframe.io/aframe-school/#/), [Documentation](https://aframe.io/docs/0.9.0/introduction/))
+- __three.js__ (The 3D engine behind A-Frame) ([Homepage](https://threejs.org/), [Examples](https://threejs.org/examples/), [Documentation](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene))
 
 ## Studio time for [__Project 2__](../projects/project2/README.md)
 
