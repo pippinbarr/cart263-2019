@@ -1,0 +1,805 @@
+<!-- ************************************************************************
+
+Page Composition
+Pippin Barr
+
+A page that plays itself like a musical score.
+
+************************************************************************ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Page Composition</title>
+
+  <!-- Our style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- jQuery documentation styles -->
+  <link rel="stylesheet" href="//api.jquery.com/jquery-wp-content/themes/jquery/css/base.css?v=1">
+	<link rel="stylesheet" href="//api.jquery.com/jquery-wp-content/themes/api.jquery.com/style.css">
+
+  <!-- Including jQuery by default -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Uncomment next two lines to include jQuery UI -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- Pizzicato -->
+  <script src="js/libraries/Pizzicato.js" content="text/javascript"></script>
+
+  <!-- We include our own script file(s) -->
+  <script src="js/script.js" content="text/javascript"></script>
+
+</head>
+
+<!-- The body is just HTML taken from jQuery's .hover() documentation -->
+
+<body>
+
+  <body class="api jquery single single-post postid-267 single-format-standard single-author singular">
+
+  <header>
+  	<section id="global-nav">
+  		<nav>
+  			<div class="constrain">
+  				<ul class="projects">
+  					<li class="project jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+  					<li class="project jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+  					<li class="project jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+  					<li class="project sizzlejs"><a href="http://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+  					<li class="project qunitjs"><a href="http://qunitjs.com/" title="QUnit">QUnit</a></li>
+  				</ul>
+  				<ul class="links">
+  					<li><a href="http://plugins.jquery.com/">Plugins</a></li>
+  					<li class="dropdown"><a href="http://contribute.jquery.org/">Contribute</a>
+  						<ul>
+  							<li><a href="http://contribute.jquery.org/CLA/">CLA</a></li>
+  							<li><a href="http://contribute.jquery.org/style-guide/">Style Guides</a></li>
+  							<li><a href="http://contribute.jquery.org/triage/">Bug Triage</a></li>
+  							<li><a href="http://contribute.jquery.org/code/">Code</a></li>
+  							<li><a href="http://contribute.jquery.org/documentation/">Documentation</a></li>
+  							<li><a href="http://contribute.jquery.org/web-sites/">Web Sites</a></li>
+  						</ul>
+  					</li>
+  					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
+  						<ul class="wide">
+  																		</ul>
+  					</li>
+  					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+  						<ul>
+  							<li><a href="http://learn.jquery.com/">Learning Center</a></li>
+  							<li><a href="http://try.jquery.com/">Try jQuery</a></li>
+  							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
+  							<li><a href="http://forum.jquery.com/">Forums</a></li>
+  							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+  							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
+  						</ul>
+  					</li>
+  					<li class="dropdown"><a href="https://jquery.org/">jQuery Foundation</a>
+  						<ul>
+  							<li><a href="https://jquery.org/join/">Join</a></li>
+  							<li><a href="https://jquery.org/members/">Members</a></li>
+  							<li><a href="https://jquery.org/team/">Team</a></li>
+  							<li><a href="https://jquery.org/conduct/">Conduct</a></li>
+  							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
+  							<li><a href="https://jquery.org/donate/">Donate</a></li>
+  						</ul>
+  					</li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</section>
+  </header>
+
+  <div id="container">
+  	<div id="logo-events" class="constrain clearfix">
+  		<h2 class="logo"><a href="http://jquery.com/" title="jQuery API Documentation">jQuery API Documentation</a></h2>
+
+  		<aside><div id="broadcast"></div></aside>
+  	</div>
+
+  	<nav id="main" class="constrain clearfix">
+  		<div class="menu-top-container">
+  	<ul id="menu-top" class="menu">
+  <li class="menu-item"><a href="http://jquery.com/download/">Download</a></li>
+  <li class="menu-item"><a href="http://api.jquery.com/">API Documentation</a></li>
+  <li class="menu-item"><a href="http://blog.jquery.com/">Blog</a></li>
+  <li class="menu-item"><a href="http://plugins.jquery.com/">Plugins</a></li>
+  <li class="menu-item"><a href="http://jquery.com/browser-support/">Browser Support</a></li>
+  	</ul>
+  </div>
+
+  		<form method="get" class="searchform" action="//api.jquery.com/">
+  	<button type="submit" class="icon-search"><span class="visuallyhidden">search</span></button>
+  	<label>
+  		<span class="visuallyhidden">Search jQuery API Documentation</span>
+  		<input type="text" name="s" value=""
+  			placeholder="Search">
+  	</label>
+  </form>
+  	</nav>
+
+  	<div id="content-wrapper" class="clearfix row">
+
+  <div class="content-right twelve columns">
+  	<div id="content">
+
+  <article id="post-267" class="post-267 post type-post status-publish format-standard hentry category-mouse-events category-65">
+  	<header class="entry-header">
+  		<h1 class="entry-title">.hover()</h1>
+  		<hr>
+  				<div class="entry-meta">
+  			Categories: <span class="category"><a href="//api.jquery.com/category/events/">Events</a> &gt; <a href="//api.jquery.com/category/events/mouse-events/">Mouse Events</a></span>		</div><!-- .entry-meta -->
+  			</header><!-- .entry-header -->
+
+  	<div class="entry-content">
+  		Bind one or two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.<div class="toc">
+  <h4><span>Contents:</span></h4>
+  <ul class="toc-list">
+  <li>
+  <a href="#hover1">.hover( handlerIn, handlerOut )</a><ul><li><a href="#hover-handlerIn-handlerOut">.hover( handlerIn, handlerOut )</a></li></ul>
+  </li>
+  <li>
+  <a href="#hover2">.hover( handlerInOut )</a><ul><li><a href="#hover-handlerInOut">.hover( handlerInOut )</a></li></ul>
+  </li>
+  </ul>
+  </div><article id="hover1" class="entry method"><h2 class="section-title">
+  <span class="name">.hover( handlerIn, handlerOut )</span><span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+  </h2>
+  <div class="entry-wrapper">
+  <p class="desc"><strong>Description: </strong>Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.</p>
+  <ul class="signatures"><li class="signature">
+  <h4 class="name">
+  <span class="version-details">version added: <a href="/category/version/1.0/">1.0</a></span><a id="hover-handlerIn-handlerOut" href="#hover-handlerIn-handlerOut"><span class="icon-link"></span>.hover( handlerIn, handlerOut )</a>
+  </h4>
+  <ul>
+  <li>
+  <div><strong>handlerIn</strong></div>
+  <div>Type: <a href="http://api.jquery.com/Types/#Function">Function</a>( <a href="http://api.jquery.com/Types/#Event">Event</a> eventObject )</div>
+  <div>A function to execute when the mouse pointer enters the element.</div>
+  </li>
+  <li>
+  <div><strong>handlerOut</strong></div>
+  <div>Type: <a href="http://api.jquery.com/Types/#Function">Function</a>( <a href="http://api.jquery.com/Types/#Event">Event</a> eventObject )</div>
+  <div>A function to execute when the mouse pointer leaves the element.</div>
+  </li>
+  </ul>
+  </li></ul>
+  <div class="longdesc" id="entry-longdesc">
+        <p>The <code>.hover()</code> method binds handlers for both <code>mouseenter</code> and <code>mouseleave</code> events. You can use it to simply apply behavior to an element during the time the mouse is within the element.</p>
+        <p>Calling <code>$( selector ).hover( handlerIn, handlerOut )</code> is shorthand for:</p>
+        <div class="syntaxhighlighter javascript">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code>$( selector ).mouseenter( handlerIn ).mouseleave( handlerOut );</code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+        <p>See the discussions for <code><a href="/mouseenter/">.mouseenter()</a></code> and <code><a href="/mouseleave/">.mouseleave()</a></code> for more details.</p>
+      </div>
+  <section class="entry-examples" id="entry-examples"><header><h2>Examples:</h2></header><div class="entry-example" id="example-0">
+  <p>To add a special style to list items that are being hovered over, try:</p>
+  <div class="syntaxhighlighter xml">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  						<div class="line n2">2</div>
+
+  						<div class="line n3">3</div>
+
+  						<div class="line n4">4</div>
+
+  						<div class="line n5">5</div>
+
+  						<div class="line n6">6</div>
+
+  						<div class="line n7">7</div>
+
+  						<div class="line n8">8</div>
+
+  						<div class="line n9">9</div>
+
+  						<div class="line n10">10</div>
+
+  						<div class="line n11">11</div>
+
+  						<div class="line n12">12</div>
+
+  						<div class="line n13">13</div>
+
+  						<div class="line n14">14</div>
+
+  						<div class="line n15">15</div>
+
+  						<div class="line n16">16</div>
+
+  						<div class="line n17">17</div>
+
+  						<div class="line n18">18</div>
+
+  						<div class="line n19">19</div>
+
+  						<div class="line n20">20</div>
+
+  						<div class="line n21">21</div>
+
+  						<div class="line n22">22</div>
+
+  						<div class="line n23">23</div>
+
+  						<div class="line n24">24</div>
+
+  						<div class="line n25">25</div>
+
+  						<div class="line n26">26</div>
+
+  						<div class="line n27">27</div>
+
+  						<div class="line n28">28</div>
+
+  						<div class="line n29">29</div>
+
+  						<div class="line n30">30</div>
+
+  						<div class="line n31">31</div>
+
+  						<div class="line n32">32</div>
+
+  						<div class="line n33">33</div>
+
+  						<div class="line n34">34</div>
+
+  						<div class="line n35">35</div>
+
+  						<div class="line n36">36</div>
+
+  						<div class="line n37">37</div>
+
+  						<div class="line n38">38</div>
+
+  						<div class="line n39">39</div>
+
+  						<div class="line n40">40</div>
+
+  						<div class="line n41">41</div>
+
+  						<div class="line n42">42</div>
+
+  						<div class="line n43">43</div>
+
+  						<div class="line n44">44</div>
+
+  						<div class="line n45">45</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">&quot;en&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">&quot;utf-8&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>hover demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">ul</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">20</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">color</span>:<span class="value"> blue;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">li</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> default;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">span</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">color</span>:<span class="value"> red;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Bread<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;fade&quot;</span>&gt;</span>Chips<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">&quot;fade&quot;</span>&gt;</span>Socks<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">&quot;li&quot;</span> ).hover(</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    $( <span class="keyword">this</span> ).append( $( <span class="string">&quot;&lt;span&gt; ***&lt;/span&gt;&quot;</span> ) );</code></div></div><div class="container"><div class="line"><code>  }, <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    $( <span class="keyword">this</span> ).find( <span class="string">&quot;span:last&quot;</span> ).remove();</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>);</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>$( <span class="string">&quot;li.fade&quot;</span> ).hover(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  $( <span class="keyword">this</span> ).fadeOut( <span class="number">100</span> );</code></div></div><div class="container"><div class="line"><code>  $( <span class="keyword">this</span> ).fadeIn( <span class="number">500</span> );</code></div></div><div class="container"><div class="line"><code>});</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+  <h4>Demo:</h4>
+  <div class="demo code-demo"></div>
+  </div>
+  <div class="entry-example" id="example-1">
+  <p>To add a special style to table cells that are being hovered over, try:</p>
+  <div class="syntaxhighlighter javascript">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  						<div class="line n2">2</div>
+
+  						<div class="line n3">3</div>
+
+  						<div class="line n4">4</div>
+
+  						<div class="line n5">5</div>
+
+  						<div class="line n6">6</div>
+
+  						<div class="line n7">7</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code>$( <span class="string">&quot;td&quot;</span> ).hover(</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    $( <span class="keyword">this</span> ).addClass( <span class="string">&quot;hover&quot;</span> );</code></div></div><div class="container"><div class="line"><code>  }, <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    $( <span class="keyword">this</span> ).removeClass( <span class="string">&quot;hover&quot;</span> );</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>);</code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+  </div>
+  <div class="entry-example" id="example-2">
+  <p>To unbind the above example use:</p>
+  <div class="syntaxhighlighter javascript">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code>$( <span class="string">&quot;td&quot;</span> ).off( <span class="string">&quot;mouseenter mouseleave&quot;</span> );</code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+  </div></section>
+  </div></article><article id="hover2" class="entry method"><h2 class="section-title">
+  <span class="name">.hover( handlerInOut )</span><span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+  </h2>
+  <div class="entry-wrapper">
+  <p class="desc"><strong>Description: </strong>Bind a single handler to the matched elements, to be executed when the mouse pointer enters or leaves the elements.</p>
+  <ul class="signatures"><li class="signature">
+  <h4 class="name">
+  <span class="version-details">version added: <a href="/category/version/1.4/">1.4</a></span><a id="hover-handlerInOut" href="#hover-handlerInOut"><span class="icon-link"></span>.hover( handlerInOut )</a>
+  </h4>
+  <ul><li>
+  <div><strong>handlerInOut</strong></div>
+  <div>Type: <a href="http://api.jquery.com/Types/#Function">Function</a>( <a href="http://api.jquery.com/Types/#Event">Event</a> eventObject )</div>
+  <div>A function to execute when the mouse pointer enters or leaves the element.</div>
+  </li></ul>
+  </li></ul>
+  <div class="longdesc" id="entry-longdesc-1">
+        <p>The <code>.hover()</code> method, when passed a single function, will execute that handler for both <code>mouseenter</code> and <code>mouseleave</code> events. This allows the user to use jQuery&apos;s various toggle methods within the handler or to respond differently within the handler depending on the <code>event.type</code>.</p>
+        <p>Calling <code>$(selector).hover(handlerInOut)</code> is shorthand for:</p>
+        <div class="syntaxhighlighter javascript">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code>$( selector ).on( <span class="string">&quot;mouseenter mouseleave&quot;</span>, handlerInOut );</code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+        <p>See the discussions for <code><a href="/mouseenter/">.mouseenter()</a></code> and <code><a href="/mouseleave/">.mouseleave()</a></code> for more details.</p>
+      </div>
+  <section class="entry-examples" id="entry-examples-1"><header><h2>Example:</h2></header><div class="entry-example" id="example-1-0">
+  <p>Slide the next sibling LI up or down on hover, and toggle a class.</p>
+  <div class="syntaxhighlighter xml">
+  	<table>
+  		<tbody>
+  			<tr>
+
+  				<td class="gutter">
+
+  						<div class="line n1">1</div>
+
+  						<div class="line n2">2</div>
+
+  						<div class="line n3">3</div>
+
+  						<div class="line n4">4</div>
+
+  						<div class="line n5">5</div>
+
+  						<div class="line n6">6</div>
+
+  						<div class="line n7">7</div>
+
+  						<div class="line n8">8</div>
+
+  						<div class="line n9">9</div>
+
+  						<div class="line n10">10</div>
+
+  						<div class="line n11">11</div>
+
+  						<div class="line n12">12</div>
+
+  						<div class="line n13">13</div>
+
+  						<div class="line n14">14</div>
+
+  						<div class="line n15">15</div>
+
+  						<div class="line n16">16</div>
+
+  						<div class="line n17">17</div>
+
+  						<div class="line n18">18</div>
+
+  						<div class="line n19">19</div>
+
+  						<div class="line n20">20</div>
+
+  						<div class="line n21">21</div>
+
+  						<div class="line n22">22</div>
+
+  						<div class="line n23">23</div>
+
+  						<div class="line n24">24</div>
+
+  						<div class="line n25">25</div>
+
+  						<div class="line n26">26</div>
+
+  						<div class="line n27">27</div>
+
+  						<div class="line n28">28</div>
+
+  						<div class="line n29">29</div>
+
+  						<div class="line n30">30</div>
+
+  						<div class="line n31">31</div>
+
+  						<div class="line n32">32</div>
+
+  						<div class="line n33">33</div>
+
+  						<div class="line n34">34</div>
+
+  						<div class="line n35">35</div>
+
+  						<div class="line n36">36</div>
+
+  						<div class="line n37">37</div>
+
+  						<div class="line n38">38</div>
+
+  						<div class="line n39">39</div>
+
+  						<div class="line n40">40</div>
+
+  						<div class="line n41">41</div>
+
+  						<div class="line n42">42</div>
+
+  						<div class="line n43">43</div>
+
+  						<div class="line n44">44</div>
+
+  						<div class="line n45">45</div>
+
+  						<div class="line n46">46</div>
+
+  						<div class="line n47">47</div>
+
+  						<div class="line n48">48</div>
+
+  						<div class="line n49">49</div>
+
+  						<div class="line n50">50</div>
+
+  						<div class="line n51">51</div>
+
+  				</td>
+
+  				<td class="code">
+  					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">&quot;en&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">&quot;utf-8&quot;</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>hover demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">ul</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">margin-left</span>:<span class="value"> <span class="number">20</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">color</span>:<span class="value"> blue;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">li</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">cursor</span>:<span class="value"> default;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">li</span><span class="class">.active</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">background</span>:<span class="value"> black;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">color</span>:<span class="value"> white;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">span</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">color</span>:<span class="value">red;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">&quot;https://code.jquery.com/jquery-1.10.2.js&quot;</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>White<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Carrots<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Orange<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Broccoli<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">li</span>&gt;</span>Green<span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">&quot;li&quot;</span> )</code></div></div><div class="container"><div class="line"><code>  .filter( <span class="string">&quot;:odd&quot;</span> )</code></div></div><div class="container"><div class="line"><code>    .hide()</code></div></div><div class="container"><div class="line"><code>  .end()</code></div></div><div class="container"><div class="line"><code>  .filter( <span class="string">&quot;:even&quot;</span> )</code></div></div><div class="container"><div class="line"><code>    .hover(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>      $( <span class="keyword">this</span> )</code></div></div><div class="container"><div class="line"><code>        .toggleClass( <span class="string">&quot;active&quot;</span> )</code></div></div><div class="container"><div class="line"><code>        .next()</code></div></div><div class="container"><div class="line"><code>          .stop( <span class="literal">true</span>, <span class="literal">true</span> )</code></div></div><div class="container"><div class="line"><code>          .slideToggle();</code></div></div><div class="container"><div class="line"><code>    });</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  </div>
+
+  <h4>Demo:</h4>
+  <div class="demo code-demo"></div>
+  </div></section>
+  </div></article>	</div><!-- .entry-content -->
+
+  </article><!-- #post-267 -->
+  			</div>
+
+  	<div id="sidebar" class="widget-area" role="complementary">
+  	<aside id="categories" class="widget">
+  		<ul>
+  				<li class="cat-item cat-item-1"><a href="//api.jquery.com/category/ajax/" >Ajax</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-2"><a href="//api.jquery.com/category/ajax/global-ajax-event-handlers/" >Global Ajax Event Handlers</a>
+  </li>
+  	<li class="cat-item cat-item-3"><a href="//api.jquery.com/category/ajax/helper-functions/" >Helper Functions</a>
+  </li>
+  	<li class="cat-item cat-item-4"><a href="//api.jquery.com/category/ajax/low-level-interface/" >Low-Level Interface</a>
+  </li>
+  	<li class="cat-item cat-item-5"><a href="//api.jquery.com/category/ajax/shorthand-methods/" >Shorthand Methods</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-6"><a href="//api.jquery.com/category/attributes/" >Attributes</a>
+  </li>
+  	<li class="cat-item cat-item-7"><a href="//api.jquery.com/category/callbacks-object/" >Callbacks Object</a>
+  </li>
+  	<li class="cat-item cat-item-8"><a href="//api.jquery.com/category/core/" >Core</a>
+  </li>
+  	<li class="cat-item cat-item-9"><a href="//api.jquery.com/category/css/" >CSS</a>
+  </li>
+  	<li class="cat-item cat-item-10"><a href="//api.jquery.com/category/data/" >Data</a>
+  </li>
+  	<li class="cat-item cat-item-11"><a href="//api.jquery.com/category/deferred-object/" >Deferred Object</a>
+  </li>
+  	<li class="cat-item cat-item-87"><a href="//api.jquery.com/category/deprecated/" >Deprecated</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-90"><a href="//api.jquery.com/category/deprecated/deprecated-1.3/" >Deprecated 1.3</a>
+  </li>
+  	<li class="cat-item cat-item-88"><a href="//api.jquery.com/category/deprecated/deprecated-1.7/" >Deprecated 1.7</a>
+  </li>
+  	<li class="cat-item cat-item-89"><a href="//api.jquery.com/category/deprecated/deprecated-1.8/" >Deprecated 1.8</a>
+  </li>
+  	<li class="cat-item cat-item-94"><a href="//api.jquery.com/category/deprecated/deprecated-1.9/" >Deprecated 1.9</a>
+  </li>
+  	<li class="cat-item cat-item-93"><a href="//api.jquery.com/category/deprecated/deprecated-1.10/" >Deprecated 1.10</a>
+  </li>
+  	<li class="cat-item cat-item-98"><a href="//api.jquery.com/category/deprecated/deprecated-3.0/" >Deprecated 3.0</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-12"><a href="//api.jquery.com/category/dimensions/" >Dimensions</a>
+  </li>
+  	<li class="cat-item cat-item-13"><a href="//api.jquery.com/category/effects/" >Effects</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-14"><a href="//api.jquery.com/category/effects/basics/" >Basics</a>
+  </li>
+  	<li class="cat-item cat-item-15"><a href="//api.jquery.com/category/effects/custom-effects/" >Custom</a>
+  </li>
+  	<li class="cat-item cat-item-16"><a href="//api.jquery.com/category/effects/fading/" >Fading</a>
+  </li>
+  	<li class="cat-item cat-item-17"><a href="//api.jquery.com/category/effects/sliding/" >Sliding</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-18 current-cat-parent current-cat-ancestor"><a href="//api.jquery.com/category/events/" >Events</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-19"><a href="//api.jquery.com/category/events/browser-events/" >Browser Events</a>
+  </li>
+  	<li class="cat-item cat-item-20"><a href="//api.jquery.com/category/events/document-loading/" >Document Loading</a>
+  </li>
+  	<li class="cat-item cat-item-21"><a href="//api.jquery.com/category/events/event-handler-attachment/" >Event Handler Attachment</a>
+  </li>
+  	<li class="cat-item cat-item-22"><a href="//api.jquery.com/category/events/event-object/" >Event Object</a>
+  </li>
+  	<li class="cat-item cat-item-23"><a href="//api.jquery.com/category/events/form-events/" >Form Events</a>
+  </li>
+  	<li class="cat-item cat-item-24"><a href="//api.jquery.com/category/events/keyboard-events/" >Keyboard Events</a>
+  </li>
+  	<li class="cat-item cat-item-25 current-cat"><a href="//api.jquery.com/category/events/mouse-events/" >Mouse Events</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-26"><a href="//api.jquery.com/category/forms/" >Forms</a>
+  </li>
+  	<li class="cat-item cat-item-27"><a href="//api.jquery.com/category/internals/" >Internals</a>
+  </li>
+  	<li class="cat-item cat-item-28"><a href="//api.jquery.com/category/manipulation/" >Manipulation</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-29"><a href="//api.jquery.com/category/manipulation/class-attribute/" >Class Attribute</a>
+  </li>
+  	<li class="cat-item cat-item-30"><a href="//api.jquery.com/category/manipulation/copying/" >Copying</a>
+  </li>
+  	<li class="cat-item cat-item-32"><a href="//api.jquery.com/category/manipulation/dom-insertion-around/" >DOM Insertion, Around</a>
+  </li>
+  	<li class="cat-item cat-item-33"><a href="//api.jquery.com/category/manipulation/dom-insertion-inside/" >DOM Insertion, Inside</a>
+  </li>
+  	<li class="cat-item cat-item-34"><a href="//api.jquery.com/category/manipulation/dom-insertion-outside/" >DOM Insertion, Outside</a>
+  </li>
+  	<li class="cat-item cat-item-35"><a href="//api.jquery.com/category/manipulation/dom-removal/" >DOM Removal</a>
+  </li>
+  	<li class="cat-item cat-item-36"><a href="//api.jquery.com/category/manipulation/dom-replacement/" >DOM Replacement</a>
+  </li>
+  	<li class="cat-item cat-item-37"><a href="//api.jquery.com/category/manipulation/general-attributes/" >General Attributes</a>
+  </li>
+  	<li class="cat-item cat-item-38"><a href="//api.jquery.com/category/manipulation/style-properties/" >Style Properties</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-39"><a href="//api.jquery.com/category/miscellaneous/" >Miscellaneous</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-40"><a href="//api.jquery.com/category/miscellaneous/collection-manipulation/" >Collection Manipulation</a>
+  </li>
+  	<li class="cat-item cat-item-41"><a href="//api.jquery.com/category/miscellaneous/data-storage/" >Data Storage</a>
+  </li>
+  	<li class="cat-item cat-item-42"><a href="//api.jquery.com/category/miscellaneous/dom-element-methods/" >DOM Element Methods</a>
+  </li>
+  	<li class="cat-item cat-item-43"><a href="//api.jquery.com/category/miscellaneous/setup-methods/" >Setup Methods</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-44"><a href="//api.jquery.com/category/offset/" >Offset</a>
+  </li>
+  	<li class="cat-item cat-item-45"><a href="//api.jquery.com/category/properties/" >Properties</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-46"><a href="//api.jquery.com/category/properties/jquery-object-instance-properties/" >Properties of jQuery Object Instances</a>
+  </li>
+  	<li class="cat-item cat-item-47"><a href="//api.jquery.com/category/properties/global-jquery-object-properties/" >Properties of the Global jQuery Object</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-92"><a href="//api.jquery.com/category/removed/" >Removed</a>
+  </li>
+  	<li class="cat-item cat-item-48"><a href="//api.jquery.com/category/selectors/" >Selectors</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-49"><a href="//api.jquery.com/category/selectors/attribute-selectors/" >Attribute</a>
+  </li>
+  	<li class="cat-item cat-item-50"><a href="//api.jquery.com/category/selectors/basic-css-selectors/" >Basic</a>
+  </li>
+  	<li class="cat-item cat-item-51"><a href="//api.jquery.com/category/selectors/basic-filter-selectors/" >Basic Filter</a>
+  </li>
+  	<li class="cat-item cat-item-52"><a href="//api.jquery.com/category/selectors/child-filter-selectors/" >Child Filter</a>
+  </li>
+  	<li class="cat-item cat-item-53"><a href="//api.jquery.com/category/selectors/content-filter-selector/" >Content Filter</a>
+  </li>
+  	<li class="cat-item cat-item-54"><a href="//api.jquery.com/category/selectors/form-selectors/" >Form</a>
+  </li>
+  	<li class="cat-item cat-item-55"><a href="//api.jquery.com/category/selectors/hierarchy-selectors/" >Hierarchy</a>
+  </li>
+  	<li class="cat-item cat-item-56"><a href="//api.jquery.com/category/selectors/jquery-selector-extensions/" >jQuery Extensions</a>
+  </li>
+  	<li class="cat-item cat-item-57"><a href="//api.jquery.com/category/selectors/visibility-filter-selectors/" >Visibility Filter</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-58"><a href="//api.jquery.com/category/traversing/" >Traversing</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-59"><a href="//api.jquery.com/category/traversing/filtering/" >Filtering</a>
+  </li>
+  	<li class="cat-item cat-item-60"><a href="//api.jquery.com/category/traversing/miscellaneous-traversal/" >Miscellaneous Traversing</a>
+  </li>
+  	<li class="cat-item cat-item-61"><a href="//api.jquery.com/category/traversing/tree-traversal/" >Tree Traversal</a>
+  </li>
+  </ul>
+  </li>
+  	<li class="cat-item cat-item-63"><a href="//api.jquery.com/category/utilities/" >Utilities</a>
+  </li>
+  	<li class="cat-item cat-item-64"><a href="//api.jquery.com/category/version/" >Version</a>
+  <ul class='children'>
+  	<li class="cat-item cat-item-65"><a href="//api.jquery.com/category/version/1.0/" >Version 1.0</a>
+  </li>
+  	<li class="cat-item cat-item-66"><a href="//api.jquery.com/category/version/1.0.4/" >Version 1.0.4</a>
+  </li>
+  	<li class="cat-item cat-item-67"><a href="//api.jquery.com/category/version/1.1/" >Version 1.1</a>
+  </li>
+  	<li class="cat-item cat-item-68"><a href="//api.jquery.com/category/version/1.1.2/" >Version 1.1.2</a>
+  </li>
+  	<li class="cat-item cat-item-69"><a href="//api.jquery.com/category/version/1.1.3/" >Version 1.1.3</a>
+  </li>
+  	<li class="cat-item cat-item-70"><a href="//api.jquery.com/category/version/1.1.4/" >Version 1.1.4</a>
+  </li>
+  	<li class="cat-item cat-item-71"><a href="//api.jquery.com/category/version/1.2/" >Version 1.2</a>
+  </li>
+  	<li class="cat-item cat-item-72"><a href="//api.jquery.com/category/version/1.2.3/" >Version 1.2.3</a>
+  </li>
+  	<li class="cat-item cat-item-73"><a href="//api.jquery.com/category/version/1.2.6/" >Version 1.2.6</a>
+  </li>
+  	<li class="cat-item cat-item-74"><a href="//api.jquery.com/category/version/1.3/" >Version 1.3</a>
+  </li>
+  	<li class="cat-item cat-item-75"><a href="//api.jquery.com/category/version/1.4/" >Version 1.4</a>
+  </li>
+  	<li class="cat-item cat-item-76"><a href="//api.jquery.com/category/version/1.4.1/" >Version 1.4.1</a>
+  </li>
+  	<li class="cat-item cat-item-77"><a href="//api.jquery.com/category/version/1.4.2/" >Version 1.4.2</a>
+  </li>
+  	<li class="cat-item cat-item-78"><a href="//api.jquery.com/category/version/1.4.3/" >Version 1.4.3</a>
+  </li>
+  	<li class="cat-item cat-item-79"><a href="//api.jquery.com/category/version/1.4.4/" >Version 1.4.4</a>
+  </li>
+  	<li class="cat-item cat-item-80"><a href="//api.jquery.com/category/version/1.5/" >Version 1.5</a>
+  </li>
+  	<li class="cat-item cat-item-81"><a href="//api.jquery.com/category/version/1.5.1/" >Version 1.5.1</a>
+  </li>
+  	<li class="cat-item cat-item-82"><a href="//api.jquery.com/category/version/1.6/" >Version 1.6</a>
+  </li>
+  	<li class="cat-item cat-item-83"><a href="//api.jquery.com/category/version/1.7/" >Version 1.7</a>
+  </li>
+  	<li class="cat-item cat-item-84"><a href="//api.jquery.com/category/version/1.8/" >Version 1.8</a>
+  </li>
+  	<li class="cat-item cat-item-86"><a href="//api.jquery.com/category/version/1.9/" >Version 1.9</a>
+  </li>
+  	<li class="cat-item cat-item-97"><a href="//api.jquery.com/category/version/1.12-2.2/" >Version 1.12 &amp; 2.2</a>
+  </li>
+  	<li class="cat-item cat-item-95"><a href="//api.jquery.com/category/version/3.0/" >Version 3.0</a>
+  </li>
+  	<li class="cat-item cat-item-96"><a href="//api.jquery.com/category/version/3.1/" >Version 3.1</a>
+  </li>
+  </ul>
+  </li>
+  		</ul>
+  	</aside>
+  </div>
+  </div>
+  	</div>
+  </div>
+
+  <footer class="clearfix simple">
+  	<div class="constrain">
+  		<div class="row">
+  			<div class="six columns offset-by-three">
+  				<h3><span>Books</span></h3>
+  				<ul class="books">
+  					<li>
+  						<a href="https://www.packtpub.com/web-development/learning-jquery-fourth-edition">
+  							<img src="//api.jquery.com/jquery-wp-content/themes/jquery/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114">
+  							Learning jQuery Fourth Edition
+  							<cite>Karl Swedberg and Jonathan Chaffer</cite>
+  						</a>
+  					</li>
+  					<li>
+  						<a href="https://www.manning.com/books/jquery-in-action-third-edition?a_bid=bdd5b7ad&amp;a_aid=141d9491">
+  							<img src="//api.jquery.com/jquery-wp-content/themes/jquery/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa" width="92" height="114">
+  							jQuery in Action
+  							<cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>
+  						</a>
+  					</li>
+  					<li>
+  						<a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513">
+  							<img src="//api.jquery.com/jquery-wp-content/themes/jquery/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
+  							jQuery Succinctly
+  							<cite>Cody Lindley</cite>
+  						</a>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+
+
+  <div id="legal">
+  	<ul class="footer-site-links">
+  			<li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li>
+  			<li><a class="icon-group" href="http://forum.jquery.com/">Forum</a></li>
+  			<li><a class="icon-wrench" href="http://api.jquery.com/">API</a></li>
+  			<li><a class="icon-twitter" href="https://twitter.com/jquery">Twitter</a></li>
+  			<li><a class="icon-comments" href="http://irc.jquery.org/">IRC</a></li>
+  			<li><a class="icon-github" href="https://github.com/jquery">GitHub</a></li>
+  	</ul>
+  	<p class="copyright">
+  		Copyright 2017 <a href="https://jquery.org/team/">The jQuery Foundation</a>.
+  		<a href="https://jquery.org/license/">jQuery License</a>
+  		<span class="sponsor-line"><a href="http://digitalocean.com" rel="nofollow" class="do-link">Web hosting by Digital Ocean</a> | <a href="http://www.stackpath.com" rel="nofollow" class="sp-link">CDN by StackPath</a></span>
+  	</p>
+  </div>
+
+  	</div>
+  </footer>
+</body>
+
+</html>

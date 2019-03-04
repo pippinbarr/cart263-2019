@@ -1,0 +1,12 @@
+/*
+
+Page Composition
+Pippin Barr
+
+Basic style to highlight currently playing element
+
+*/
+
+.playing {
+  background-color: yellow !important;
+}

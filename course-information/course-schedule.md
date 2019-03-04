@@ -9,8 +9,8 @@
 - ~~[Week 7](#week-7) - Voices~~
 - ~~[Reading Week](#reading-week)~~
 - __[Week 8](#week-8) - 3D__ [_Project 2 Due_]
-- [Week 9](#week-9) - Text generation, data
-- [Week 10](#week-10) - Sensors / Sounds
+- [Week 9](#week-9) - Text and Data
+- [Week 10](#week-10) - Music
 - [Week 11](#week-11) - Node.js, Electron
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
@@ -19,7 +19,7 @@
 ---
 
 # Week 1
-## Introductions and JavaScript Review (Week of 7 January 2019)
+# Introductions and JavaScript Review (Week of 7 January 2019)
 
 ## Topics
 - __Introductions__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/introductions/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/introductions/introductions))
@@ -57,8 +57,7 @@
 ---
 
 # Week 2
-
-## Object-Oriented Programming, Inheritance, and Polymorphism (Week of 14 January 2019)
+# Object-Oriented Programming, Inheritance, and Polymorphism (Week of 14 January 2019)
 
 ## Topics
 - __Object-Oriented Programming__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/object-oriented-programming/object-oriented-programming))
@@ -86,8 +85,7 @@
 ---
 
 # Week 3
-
-## jQuery (Week of 21 January 2019)
+# jQuery (Week of 21 January 2019)
 
 ## Topic
 - __jQuery__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/jquery/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/jquery/jquery))
@@ -129,7 +127,7 @@
 ---
 
 # Week 4
-## jQuery UI (Week of 28 January 2019)
+# jQuery UI (Week of 28 January 2019)
 
 ## Topic
 - __jQuery UI__ ([Homepage](https://jqueryui.com/))
@@ -163,7 +161,7 @@
 ---
 
 # Week 5
-## Phaser, Project 1 hand-in (Week of 4 February 2019)
+# Phaser, Project 1 hand-in (Week of 4 February 2019)
 
 ## Topics
 - __Phaser 3__ ([Homepage](https://phaser.io/), [Examples](http://labs.phaser.io/), [API](https://photonstorm.github.io/phaser3-docs/))
@@ -199,12 +197,12 @@
 ---
 
 # Week 6
-## Felix Khaled Barr is born (Week of 11 February 2019)
+# Felix Khaled Barr is born (Week of 11 February 2019)
 
 ---
 
 # Week 7
-## Voices (Week of 18 February 2019)
+# Voices (Week of 18 February 2019)
 
 ## Topic
 - __ResponsiveVoice__ ([Homepage](https://responsivevoice.org/), [API](https://responsivevoice.org/api/))
@@ -236,7 +234,7 @@
 ---
 
 # Reading Week
-## No Class (Week of 25 February 2019)
+# No Class (Week of 25 February 2019)
 
 ## Hand-in
 - [__Assignment 5__](../assignments/assignment5/README.md)
@@ -247,7 +245,7 @@
 ---
 
 # Week 8
-## 3D, Project 2 hand-in (Week of 4 March 2019)
+# 3D, Project 2 hand-in (Week of 4 March 2019)
 
 ## Topic
 - __three.js__ ([Homepage](https://threejs.org/))
@@ -257,6 +255,7 @@
 
 ## Hand-in
 - [__Project 2__](../projects/project2/README.md)
+- __NOTE:__ A one-week extension is available for Project 2 for anyone who needs it.
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
 
@@ -266,11 +265,12 @@
 # Text and Data (Week of 11 March 2019)
 
 ## Topics
-- __RiTA__ ([Homepage](https://rednoise.org/rita/))
 - __Data__ (jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
 - __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
 - See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
 - __Template strings__ ([MDN Reference entry](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
+- __localStorage__ ([HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/))
+- __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
 ## Activity
 - __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/data/condiments.zip))
@@ -280,23 +280,30 @@
 - __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/hacking/))
 - __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/frankenstein-and-prejudice/))
 
-
 ## Homework
-- Assignment 6
+- [__Assignment 6__](../assignments/assignment6/README.md)
 - [__Project 3__](../projects/project3/README.md)
 
 ---
 
 # Week 10
-## Sensors (Week of 18 March 2019)
+# Music (Week of 18 March 2019)
 
 ## Topics
-- __localStorage__
-- __Tracking.js__
-- __Geolocation__ ([w3schools introduction](https://www.w3schools.com/html/html5_geolocation.asp))
+- __Howler.js__ ([Homepage](https://howlerjs.com/), [Documentation](https://github.com/goldfire/howler.js#documentation))
+- __Pizzicato.js__ ([Homepage](https://alemangui.github.io/pizzicato/))
+- __Gibber__ ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
+
+## Activity
+- __Coming soon...__
+
+## Examples
+- __Foley__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/howler/foley/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/howler/foley/))
+- __Page Composition__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/pizzicato/page-composition/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/pizzicato/page-composition/))
+- __Drum Machine__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/gibber/drum-machine/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/gibber/drum-machine/))
 
 ## Hand-in
-- Assignment 6
+- [__Assignment 6__](../assignments/assignment6/README.md)
 ## Homework
 - Assignment 7
 - [__Project 3__](../projects/project3/README.md)
@@ -304,7 +311,7 @@
 ---
 
 # Week 11
-## Node.js and Electron (Week of 25 March 2019)
+# Node.js and Electron (Week of 25 March 2019)
 
 ## Topics
 - __Node.js__
@@ -319,7 +326,9 @@
 ---
 
 # Week 12
-## Studio (Week of 1 April 2019)
+# Studio (Week of 1 April 2019)
+
+## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Hand-in
 - Assignment 8
@@ -329,7 +338,9 @@
 ---
 
 # Week 13
-## Studio (Week of 8 April 2019)
+# Studio (Week of 8 April 2019)
+
+## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
@@ -337,7 +348,7 @@
 ---
 
 # Week 14
-## Studio (make-up class) (Week of 15 April 2019)
+# Studio (make-up class) (Week of 15 April 2019)
 
 ## Hand-in
 - [__Project 3__](../projects/project3/README.md) (Sunday, 21 April 2019)
