@@ -10,6 +10,7 @@ author, and this description to match your project!
 
 ******************/
 
+let clickToPlay = true;
 let drums = [
 ];
 let currentBeat = 0;
@@ -40,8 +41,6 @@ function setup() {
     sequence: '........',
     frequency: 8800
   });
-
-  setInterval(playBeat,250);
 }
 
 function playBeat() {
@@ -85,17 +84,22 @@ function draw() {
 }
 
 function mousePressed() {
-  let beatIndex = Math.floor((mouseX / width) * drums[0].sequence.length);
-  let sequenceIndex = Math.floor((mouseY / height) * drums.length);
-  let sequence = drums[sequenceIndex].sequence;
-  let currentSymbol = sequence.charAt(beatIndex);
-  if (currentSymbol === '.') {
-    sequence = sequence.substr(0,beatIndex) + '-' + sequence.substr(beatIndex+1);
+  if (clickToPlay) {
+    clickToPlay = false;
+    setInterval(playBeat,250);
   }
   else {
-    sequence = sequence.substr(0,beatIndex) + '.' + sequence.substr(beatIndex+1);
-  }
+    let beatIndex = Math.floor((mouseX / width) * drums[0].sequence.length);
+    let sequenceIndex = Math.floor((mouseY / height) * drums.length);
+    let sequence = drums[sequenceIndex].sequence;
+    let currentSymbol = sequence.charAt(beatIndex);
+    if (currentSymbol === '.') {
+      sequence = sequence.substr(0,beatIndex) + '-' + sequence.substr(beatIndex+1);
+    }
+    else {
+      sequence = sequence.substr(0,beatIndex) + '.' + sequence.substr(beatIndex+1);
+    }
 
-  drums[sequenceIndex].sequence = sequence;
-  console.log(sequence);
+    drums[sequenceIndex].sequence = sequence;
+  }
 }
