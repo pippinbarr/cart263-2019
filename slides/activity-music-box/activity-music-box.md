@@ -43,7 +43,7 @@ let frequencies = [
 
 To play tones and drum sounds we need a synthesiser and some sound files to play.
 
-1. Download the sound files for the [kick](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/assets/sounds/kick.wav), [snare](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/assets/sounds/snare.wav), and [hihat](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/assets/sounds/hihat.wav) and store them in your `assets/sounds` folder
+1. Download the sound files for the [kick](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/kick.wav), [snare](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/snare.wav), and [hihat](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/hihat.wav) and store them in your `assets/sounds` folder
 2. Declare variables for `synth`, `kick`, `snare`, and `hihat` at the top of the program
 3. In `setup()` use Pizzicato to create a synth sound and store it in `synth`
 4. In `setup()` use Pizzicato to create sounds from the three files and store them in their variables
