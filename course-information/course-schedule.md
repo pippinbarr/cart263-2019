@@ -295,7 +295,7 @@
 - __Gibber__ ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
 
 ## Activity
-- __Coming soon...__
+- __Music Box__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-music-box), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/pizzicato/music-box), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box.zip))
 
 ## Examples
 - __Foley__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/howler/foley/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/howler/foley/))
@@ -305,7 +305,7 @@
 ## Hand-in
 - [__Assignment 6__](../assignments/assignment6/README.md)
 ## Homework
-- Assignment 7
+- [__Assignment 7__](../assignments/assignment7/README.md)
 - [__Project 3__](../projects/project3/README.md)
 
 ---
@@ -318,7 +318,7 @@
 - __Electron__
 
 ## Hand-in
-- Assignment 7
+- [__Assignment 7__](../assignments/assignment7/README.md)
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
 - Assignment 8
