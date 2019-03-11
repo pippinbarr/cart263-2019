@@ -47,26 +47,36 @@ let voiceParameters = {
 
 $(document).ready(function() {
 
-  // Load our script file as the text we'll be 'typing'
-  // Note that we use $.ajax here rather than $.loadJSON
-  // because we're loading a text file
-  $.ajax({
-    url: 'js/script.js', // Location of the file
-    success: gotData, // Function to call when data is ready
-    dataType: 'text' // The type of data we're requesting
+  $('#window').hide();
+
+  // A click handler to avoid sound interaction problems
+  $(document).on('click',function () {
+    $('#click-to-start').remove();
+    $('#window').show();
+
+    // Load our script file as the text we'll be 'typing'
+    // Note that we use $.ajax here rather than $.loadJSON
+    // because we're loading a text file
+    $.ajax({
+      url: 'js/script.js', // Location of the file
+      success: gotData, // Function to call when data is ready
+      dataType: 'text' // The type of data we're requesting
+    });
+
+    // Listen for keypresses (for typing/hacking)
+    $(document).keypress(keyPressed);
+
+    // Start the exciting drum loop for intensity
+    startDrums();
+
+    // Start the voice chanting 'you are hacking into the mainframe'
+    setInterval(makeAnnouncement,ANNOUNCEMENT_DELAY);
+
+    // Pop up a hacking dialog
+    showDialog();
   });
 
-  // Listen for keypresses (for typing/hacking)
-  $(document).keypress(keyPressed);
 
-  // Start the exciting drum loop for intensity
-  startDrums();
-
-  // Start the voice chanting 'you are hacking into the mainframe'
-  setInterval(makeAnnouncement,ANNOUNCEMENT_DELAY);
-
-  // Pop up a hacking dialog
-  showDialog();
 });
 
 

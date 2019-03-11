@@ -38,20 +38,24 @@ let voiceParameters = {
 
 $(document).ready(function() {
 
-  // Load our own script file as text
+  // A click handler to avoid sound interaction problems
+  $(document).on('click',function () {
+    $('#click-to-start').remove();
+    // Load our own script file as text
 
-  // We'll use .ajax for this, which is the main jQuery function
-  // for requesting data from files/urls. It stands for:
-  // Asynchronous JavaScript And XML
-  $.ajax({
-    url: 'js/script.js', // Location of the file
-    success: gotData, // Function to call when data is ready
-    dataType: 'text' // The type of data we're requesting
+    // We'll use .ajax for this, which is the main jQuery function
+    // for requesting data from files/urls. It stands for:
+    // Asynchronous JavaScript And XML
+    $.ajax({
+      url: 'js/script.js', // Location of the file
+      success: gotData, // Function to call when data is ready
+      dataType: 'text' // The type of data we're requesting
+    });
+    // Every beat poet needs erratic drumming as accompaniment,
+    // so start that up
+    startDrums();
   });
 
-  // Every beat poet needs erratic drumming as accompaniment,
-  // so start that up
-  startDrums();
 
 });
 

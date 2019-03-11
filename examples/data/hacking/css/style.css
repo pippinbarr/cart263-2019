@@ -11,6 +11,14 @@ body {
   background-color: black;
 }
 
+#click-to-start {
+  margin-top: 50px;
+  font-family: courier;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+
 #window {
   position: absolute;
   top: 50%;
