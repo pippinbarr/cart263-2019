@@ -15,8 +15,7 @@ An experience in which:
 ## 1. Start a project
 
 1. Download the [template jQuery project](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-jquery-project.zip)
-2. Download the [RiTa library](http://rednoise.org/rita/index.html), put it in your project, and include it in your `index.html`
-3. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2019/master/activities/data/condiments/data/data.json) and put it in a `data` folder in your project
+2. Download the [JSON data](https://raw.githubusercontent.com/pippinbarr/cart263-2019/master/activities/data/condiments/data/data.json) and put it in a `data` folder in your project
 
 ---
 

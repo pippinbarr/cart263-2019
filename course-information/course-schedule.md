@@ -8,8 +8,8 @@
 - ~~[Week 6](#week-6) - Felix Khaled Barr is born~~
 - ~~[Week 7](#week-7) - Voices~~
 - ~~[Reading Week](#reading-week)~~
-- __[Week 8](#week-8) - 3D__ [_Project 2 Due_]
-- [Week 9](#week-9) - Text and Data
+- ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
+- __[Week 9](#week-9) - Text and Data__
 - [Week 10](#week-10) - Music
 - [Week 11](#week-11) - Node.js, Electron
 - [Week 12](#week-12) - Studio
@@ -265,20 +265,23 @@
 # Text and Data (Week of 11 March 2019)
 
 ## Topics
-- __Data__ (jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
+- __Data__ ([JSON](https://www.w3schools.com/whatis/whatis_json.asp), jQuery's [`$.getJSON()`](https://api.jquery.com/jquery.getjson/) and [`$.ajax()`](http://api.jquery.com/jquery.ajax/), p5's [`loadStrings()`](https://p5js.org/reference/#/p5/loadStrings) and [`loadJSON()`](https://p5js.org/reference/#/p5/loadJSON))
 - __Darius Kazemi's corpora__ ([JSON repository](https://github.com/dariusk/corpora))
-- See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
 - __Template strings__ ([MDN Reference entry](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
-- __localStorage__ ([HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/))
-- __RiTA__ ([Homepage](https://rednoise.org/rita/))
+- See also: __Tracery__ ([Homepage](https://github.com/galaxykate/tracery), [But this node-based tutorial is more up to date for commands](https://github.com/v21/tracery ))
+- See also: __RiTA__ ([Homepage](https://rednoise.org/rita/))
 
 ## Activity
 - __Condiments__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-condiments), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/data/condiments), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/data/condiments), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/data/condiments.zip))
 
 ## Examples
+- __Simple JSON__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/simplejson/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/simplejson/))
 - __Beat Poetry__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/beatpoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/beatpoetry/))
 - __You Are Hacking Into the Mainframe__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/hacking/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/hacking/))
 - __Frankenstein and Prejudice, a novel__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/data/frankenstein-and-prejudice/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/data/frankenstein-and-prejudice/))
+
+## Hand-in
+- [__Project 2__](../projects/project2/README.md)
 
 ## Homework
 - [__Assignment 6__](../assignments/assignment6/README.md)
@@ -327,6 +330,9 @@
 
 # Week 12
 # Studio (Week of 1 April 2019)
+
+## Topic
+- __localStorage__ ([HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/))
 
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
