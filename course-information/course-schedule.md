@@ -9,8 +9,8 @@
 - ~~[Week 7](#week-7) - Voices~~
 - ~~[Reading Week](#reading-week)~~
 - ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
-- __[Week 9](#week-9) - Text and Data__
-- [Week 10](#week-10) - Music
+- ~~[Week 9](#week-9) - Text and Data~~
+- __[Week 10](#week-10) - Music__
 - [Week 11](#week-11) - Node.js, Electron
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
@@ -295,7 +295,7 @@
 ## Topics
 - __Howler.js__ ([Homepage](https://howlerjs.com/), [Documentation](https://github.com/goldfire/howler.js#documentation))
 - __Pizzicato.js__ ([Homepage](https://alemangui.github.io/pizzicato/))
-- __Gibber__ ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
+- __See also__: __Gibber__ ([Reference](http://charlie-roberts.com/gibber/gibber-lib-reference/), [Library repository](https://github.com/charlieroberts/gibber.lib))
 
 ## Activity
 - __Music Box__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/activity-music-box), [Solution Online](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/), [Solution Code](https://github.com/pippinbarr/cart263-2019/tree/master/activities/pizzicato/music-box), [Download Solution](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box.zip))

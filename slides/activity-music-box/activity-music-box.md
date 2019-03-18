@@ -14,7 +14,7 @@ An experience in which:
 
 ## 1. Start a project
 
-1. Download the [template p5 project](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-p5-project.zip) (We're just using p5 for funs, it could be written in jQuery just as easily.)
+1. Download the [template p5 project](https://github.com/pippinbarr/cart263-2019/raw/master/templates/template-p5-project.zip) (We're just using p5 for funs, it could be written in jQuery just as easily. But don't right now.)
 2. Download the [Pizzicato library](https://alemangui.github.io/pizzicato/), put it in your project, and include it in your `index.html`
 
 ---
@@ -25,7 +25,7 @@ If we want to play randomly selected notes, we should keep them all in the same 
 
 Let's use __A Major__ as our scale, which is __A, B, C♯, D, E, F♯, and G♯__. To get the frequencies, look them up online here: http://pages.mtu.edu/~suits/notefreqs.html
 
-1. Create an array called `frequencies` at the top of the script which stores the frequencies for the notes in A Major. (I suggest starting at A3 and going up from there)
+1. Create an array called `frequencies` at the top of the script which stores the frequencies for the notes in A Major. (I suggest starting at A3 and going up from there until you have one entry for each note.)
 
 ???
 
@@ -45,7 +45,7 @@ To play tones and drum sounds we need a synthesiser and some sound files to play
 
 1. Download the sound files for the [kick](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/kick.wav), [snare](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/snare.wav), and [hihat](https://pippinbarr.github.io/cart263-2019/activities/pizzicato/music-box/assets/sounds/hihat.wav) and store them in your `assets/sounds` folder
 2. Declare variables for `synth`, `kick`, `snare`, and `hihat` at the top of the program
-3. In `setup()` use Pizzicato to create a synth sound and store it in `synth`
+3. In `setup()` use Pizzicato to create a synth/wave-based sound and store it in `synth`
 4. In `setup()` use Pizzicato to create sounds from the three files and store them in their variables
 
 ???
@@ -181,7 +181,7 @@ let patternIndex = 0;
 Now we need a function to be called on an interval that will play the current drum sounds for the current beat. Create a function called `playDrum()` and in it:
 
 1. Get the string at `patternIndex` in the `pattern` array and store it in a variable (call it `symbols` perhaps)
-2. For each drum symbol (`x`, `o`, and `*`) use `.indexOf()` on the `symbols` string to see if that drum symbol appears in the current beat (note that `.indexOf()` returns `-1` if it _does not find the search string_)
+2. For each drum symbol (`x`, `o`, and `*`) use `symbols.indexOf()` to see if that drum symbol appears in the current beat (note that `.indexOf()` returns `-1` if it _does not find the search string_)
 3. If it does appear, tell the corresponding sound to play
 4. Finally, advance `patternIndex` by 1 and set it back to `0` if it reaches the end of the `pattern` array
 

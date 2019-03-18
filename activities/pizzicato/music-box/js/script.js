@@ -51,8 +51,6 @@ function setup() {
     source: 'wave',
     options: {
       type: 'sine',
-      attack: ATTACK,
-      release: RELEASE,
       frequency: 220
     }
   });

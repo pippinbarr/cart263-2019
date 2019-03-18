@@ -35,8 +35,8 @@ let sfx = {
 
 $(document).ready(function() {
 
-  // First we get an array of all the tags (the 'keys' of the object) in the elements object
-  // (e.g. a list of all the property names)
+  // Here's a new function! Object.keys() - it allows us to get an array of all the property
+  // names inside an object. In this case the 'sfx' object.
   let tags = Object.keys(sfx);
   // Take a look at this in the console, as it's kind of cool
   console.log(tags);
@@ -53,6 +53,11 @@ $(document).ready(function() {
     });
     // Set the sound effect for the element in the elements object
     // so we can trigger it later
+    //
+    // New thing! Notice how we can set a property of an object by using array
+    // syntax! e.g. if we wanted sfx.div we could also write sfx['div']. This is
+    // particularly good because it lets us access object properties using variables
+    // to name them instead of having to write the name explicitly as with dot notation.
     sfx[tag] = tagSFX;
     // Add a hover by selecting the element type with jQuery
     $(tag).on('mouseover',mouseOver);
