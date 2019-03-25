@@ -325,7 +325,6 @@
 ## Homework
 - [__Assignment 8__](../assignments/assignment8/README.md)
 - [__Project 3__](../projects/project3/README.md)
-- Assignment 8
 
 ---
 
