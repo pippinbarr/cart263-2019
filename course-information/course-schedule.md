@@ -10,8 +10,8 @@
 - ~~[Reading Week](#reading-week)~~
 - ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
 - ~~[Week 9](#week-9) - Text and Data~~
-- __[Week 10](#week-10) - Music__
-- [Week 11](#week-11) - Node.js, Electron
+- ~~[Week 10](#week-10) - Music~~
+- __[Week 11](#week-11) - Node.js, Electron__
 - [Week 12](#week-12) - Studio
 - [Week 13](#week-13) - Studio
 - [Week 14](#week-14) - Studio (Make-up class)
