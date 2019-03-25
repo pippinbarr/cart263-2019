@@ -323,6 +323,7 @@
 ## Hand-in
 - [__Assignment 7__](../assignments/assignment7/README.md)
 ## Homework
+- [__Assignment 8__](../assignments/assignment8/README.md)
 - [__Project 3__](../projects/project3/README.md)
 - Assignment 8
 
@@ -337,7 +338,7 @@
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Hand-in
-- Assignment 8
+- [__Assignment 8__](../assignments/assignment8/README.md)
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
 
