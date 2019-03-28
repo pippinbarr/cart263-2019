@@ -319,6 +319,7 @@
 ## Topics
 - __Node.js__ ([Michael's slides](https://docs.google.com/presentation/d/1gCQhGYmmMpQecWFCB1E9fBNNt3P05kelrO0JnHK6i2M/), [Node.js Homepage](https://nodejs.org/en/))
 - __Electron__ ([Electron Homepage](https://electronjs.org/))
+- __Git__ ([Git](https://git-scm.com/downloads), in case you need to download it for Windows)
 - __Course Evaluations__
 
 ## Hand-in
