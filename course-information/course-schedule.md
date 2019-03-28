@@ -317,8 +317,9 @@
 # Node.js and Electron (Week of 25 March 2019)
 
 ## Topics
-- __Node.js__
-- __Electron__
+- __Node.js__ ([Michael's slides](https://docs.google.com/presentation/d/1gCQhGYmmMpQecWFCB1E9fBNNt3P05kelrO0JnHK6i2M/), [Node.js Homepage](https://nodejs.org/en/))
+- __Electron__ ([Electron Homepage](https://electronjs.org/))
+- __Course Evaluations__
 
 ## Hand-in
 - [__Assignment 7__](../assignments/assignment7/README.md)
