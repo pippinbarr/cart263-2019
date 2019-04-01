@@ -17,7 +17,7 @@ let string = "the quick brown fox jumped over the lazy dog";
 $(document).ready(function () {
 
   // First try to load the words from storage
-  let loaded = loadWords().
+  let loaded = loadWords();
 
   // If this failed there was no word data...
   if (!loaded) {

@@ -1,0 +1,15 @@
+body {
+
+}
+
+/* Styling the notepad to look notepaddy */
+#notepad {
+  width: 70vw;
+  height: 70vh;
+  font-family: Courier, monospace;
+  font-size: 2em;
+  color: black;
+  margin: 0 auto;
+  background: rgb(250,250,100);
+  padding: 50px;
+}

@@ -11,8 +11,8 @@
 - ~~[Week 8](#week-8) - 3D [_Project 2 Due_]~~
 - ~~[Week 9](#week-9) - Text and Data~~
 - ~~[Week 10](#week-10) - Music~~
-- __[Week 11](#week-11) - Node.js, Electron__
-- [Week 12](#week-12) - Studio
+- ~~[Week 11](#week-11) - Node.js, Electron~~
+- __[Week 12](#week-12) - localStorage__
 - [Week 13](#week-13) - Studio
 - [Week 14](#week-14) - Studio (Make-up class)
 
@@ -331,10 +331,14 @@
 ---
 
 # Week 12
-# Studio (Week of 1 April 2019)
+# localStorage (Week of 1 April 2019)
 
 ## Topic
-- __localStorage__ ([HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/))
+- __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/localstorage))
+
+## Example
+- __Notepad__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/localstorage/notepad/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/localstorage/notepad/))
+- __Fridge Poetry__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/localstorage/fridgepoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/localstorage/fridgepoetry/))
 
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
@@ -342,6 +346,11 @@
 - [__Assignment 8__](../assignments/assignment8/README.md)
 ## Homework
 - [__Project 3__](../projects/project3/README.md)
+
+## Resources
+- localStorage
+  - [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+  - [HTML Dog introduction](https://htmldog.com/guides/javascript/advanced/localstorage/)
 
 ---
 
@@ -357,6 +366,8 @@
 
 # Week 14
 # Studio (make-up class) (Week of 15 April 2019)
+
+## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Hand-in
 - [__Project 3__](../projects/project3/README.md) (Sunday, 21 April 2019)
