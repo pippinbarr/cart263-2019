@@ -334,7 +334,7 @@
 # localStorage (Week of 1 April 2019)
 
 ## Topic
-- __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/localstorage))
+- __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/localstorage/localstorage))
 
 ## Example
 - __Notepad__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/localstorage/notepad/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/localstorage/notepad/))
