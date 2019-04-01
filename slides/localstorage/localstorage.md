@@ -24,7 +24,7 @@
 ## `localStorage`
 
 - In JavaScript there is an object called `localStorage` that provides this functionality
-- It is mercifully simple...
+- Luckily, using `localStorage` is mercifully simple...
 
 ---
 
@@ -199,6 +199,16 @@ localStorage.getItem('childhood'); // null
 localStorage.getItem('adolescence'); // null
 localStorage.getItem('twenties'); // null
 ```
+
+---
+
+## Where is the data?
+
+- `localStorage` saves and loads data based on the __domain__ its used on into the __browser__ that is viewing the page
+- This means that a script running on a different domain __cannot__ see the stuff you save in `localStorage` on your domain
+- This also means that a different browser viewing the __same page__ will not see any data saved by a different browser
+- Hopefully it's obvious from this that different users won't see the same data!
+- (Also note that in a browser's "incognito" or "private" mode, `localStorage` is cleared when the window is closed.)
 
 ---
 
