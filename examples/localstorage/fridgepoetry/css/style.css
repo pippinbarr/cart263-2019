@@ -1,0 +1,16 @@
+body {
+  overflow: hidden;
+}
+
+.word {
+  position: absolute;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 2px solid black;
+  border-bottom: 3px solid black;
+}
