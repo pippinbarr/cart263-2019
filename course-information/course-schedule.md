@@ -336,9 +336,10 @@
 ## Topic
 - __localStorage__ ([Slides](https://pippinbarr.github.io/cart263-2019/slides/localstorage/), [Notes](https://pippinbarr.github.io/cart263-2019/slides/localstorage/localstorage))
 
-## Example
+## Examples
 - __Notepad__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/localstorage/notepad/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/localstorage/notepad/))
 - __Fridge Poetry__ ([Online](https://pippinbarr.github.io/cart263-2019/examples/localstorage/fridgepoetry/), [Source Code](https://www.github.com/pippinbarr/cart263-2019/tree/master/examples/localstorage/fridgepoetry/))
+- __Let's Play: Ancient Greek Punishment: Teaches Typing__ ([Online](https://pippinbarr.github.io/lets-play-ancient-greek-punishment-teaches-typing/), [Source Code](https://github.com/pippinbarr/lets-play-ancient-greek-punishment-teaches-typing/)) [Uses localStorage to track whether or not the player has unlocked the Camus level.]
 
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
