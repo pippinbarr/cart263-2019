@@ -1,7 +1,7 @@
 # Assignment 8: Project 3 Prototype
 
 __Grade__: 1.25% of final grade (pass/fail)  
-__Deadline__: 11:59PM on the day of class on week of 25 March 2019.
+__Deadline__: 11:59PM on the day of class on week of 1 April 2019 ( ha ha ha ).
 
 ---
 
