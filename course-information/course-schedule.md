@@ -358,6 +358,9 @@
 # Week 13
 # Studio (Week of 8 April 2019)
 
+## Light reading
+- [illustrated.dev](https://illustrated.dev/) (Charming illustrated exlpanations of JavaScript concepts!)
+
 ## Studio time for [__Project 3__](../projects/project3/README.md)
 
 ## Homework
